@@ -1,4 +1,4 @@
-# MASSIVE 1.1 Typo Data Processing
+# MASSIVE 1.1 Typos
 
 This project studies the **robustness of multilingual intent classification to typos**. It investigates how realistic character-level spelling errors affect intent-classification systems across languages and model types, and whether typo augmentation improves robustness.
 
