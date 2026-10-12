@@ -30,10 +30,25 @@ Open `EssentialsNLP.ipynb` and run the cells from top to bottom.
 
 ## Output files
 
-Running the notebook creates only the original clean download CSVs in `typo_data/`:
+Running the notebook exports all data under `exported_data/`:
 
-- `{language}_train.csv`
-- `{language}_validation.csv`
-- `{language}_test.csv`
+```text
+exported_data/
+├── clean/
+│   ├── en-US/{train,validation,test}.csv
+│   ├── vi-VN/{train,validation,test}.csv
+│   ├── de-DE/{train,validation,test}.csv
+│   └── zh-CN/{train,validation,test}.csv
+├── augmented/
+│   ├── en-US_train_augmented.csv
+│   ├── vi-VN_train_augmented.csv
+│   ├── de-DE_train_augmented.csv
+│   └── zh-CN_train_augmented.csv
+├── corrupted_test/
+│   └── {language}/{typo_type}_{noise_level}.csv
+└── metadata/
+    ├── intent_mapping.json
+    └── data_manifest.json
+```
 
-All quality summaries, overlap counts, typo-augmented data, corrupted test sets, and inspection pairs are displayed or held in memory only; they are not exported as additional files.
+The manifest records the dataset configuration, row counts, generated paths, typo types, noise levels, and reproducibility seed.
