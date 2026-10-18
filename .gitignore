@@ -1,3 +1,11 @@
 .idea/
 typo_data/
 .venv/
+
+# Local training handoff, do not commit
+02_training/
+
+.venv/
+__pycache__/
+.venv/
+__pycache__/

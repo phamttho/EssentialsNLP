@@ -1,0 +1,33 @@
+language,source_row,selected_worst_condition,typo_type,noise_level,clean_utterance,test_utterance,true_intent_name,majority_prediction_name,clean_agreement_count,agreement_count
+en-US,21,substitution_0.20,substitution,0.2,tell me the weather this week,tell mn uhe weeteer tcis week,weather_query,calendar_query,3,3
+en-US,71,substitution_0.20,substitution,0.2,please tell me the latest news,please tell me uwe lbiest necs,news_query,social_query,3,3
+en-US,74,substitution_0.20,substitution,0.2,what's sensational in time of india,what's sensuttanal jn time oc indiv,news_query,datetime_query,3,3
+en-US,96,substitution_0.20,substitution,0.2,change the lights to dim,chgnge the lxghts to dyp,iot_hue_lightdim,iot_hue_lightup,3,3
+en-US,127,substitution_0.20,substitution,0.2,keep me informed about bitcoin price,keep mi infogfed abbut bnthoin price,news_query,qa_stock,3,3
+en-US,146,substitution_0.20,substitution,0.2,hey siri mute the speakers,zez sirv zute the speakers,audio_volume_mute,audio_volume_down,3,3
+en-US,160,substitution_0.20,substitution,0.2,please remove my alarm,please romzve by alrrm,alarm_remove,alarm_set,3,3
+en-US,207,substitution_0.20,substitution,0.2,if it's sunrise in stockholm what time is it in okinawa,if it's tuerike kn stocksolm what time gx it iw okiuawa,datetime_convert,qa_stock,3,3
+vi-VN,0,substitution_0.20,substitution,0.2,đánh thức tôi dậy lúc năm giờ sáng tuần này,wánh tỳức tôỷ dậq lúc năm gbẵ sáỉg tuần này,alarm_set,alarm_query,3,3
+vi-VN,28,substitution_0.20,substitution,0.2,hạ các đèn xuống,hạ cỏ́q đé̀n xuống,iot_hue_lightdim,audio_volume_mute,3,3
+vi-VN,47,substitution_0.20,substitution,0.2,tôi không nghe thấy bạn,tôi khônú qghắ thệy bạn,audio_volume_up,general_quirky,3,3
+vi-VN,59,substitution_0.20,substitution,0.2,không nói hôm nay,kolng npi hôm nay,audio_volume_mute,weather_query,3,3
+vi-VN,92,substitution_0.20,substitution,0.2,tăng âm lượng,tẩng âd lượng,audio_volume_up,audio_volume_other,3,3
+vi-VN,140,substitution_0.20,substitution,0.2,tôi muốn nghe snow của red hot chili peppers,tôi mỳãn nghề ẳnlợ của rờd hot chili peppers,play_music,cooking_recipe,3,3
+vi-VN,143,substitution_0.20,substitution,0.2,phát người hãy quên em đi,ữháó người hãò quên êm đi,play_music,general_quirky,3,3
+vi-VN,155,substitution_0.20,substitution,0.2,lưu ý kiến,ỉưu ý kiỗn,music_likeness,general_quirky,3,3
+de-DE,3,substitution_0.20,substitution,0.2,und die dunkelkeit fällt,rnd die duxkelkeix fhllt,iot_hue_lighton,iot_hue_lightdim,3,3
+de-DE,10,substitution_0.20,substitution,0.2,olly sage mir die zeit in g. m. t. plus fünf,olly tagk mik die zeßt iü g. l. t. plus fünf,datetime_convert,qa_maths,3,3
+de-DE,17,substitution_0.20,substitution,0.2,wie spät it es heute,wie epät zt es geute,datetime_query,weather_query,3,3
+de-DE,72,substitution_0.20,substitution,0.2,schalte aus die beleuchtung,schalte qfs éie beleucétuna,iot_hue_lightoff,iot_hue_lighton,3,3
+de-DE,79,substitution_0.20,substitution,0.2,entferne den ersten wecker,emteerne den ersten ßrckzr,alarm_remove,email_sendemail,3,3
+de-DE,127,substitution_0.20,substitution,0.2,halte mich über den bitcoin preis auf dem laufenden,malte zich üueô den bdtcpin preis aef dem lßufeüden,news_query,qa_stock,3,3
+de-DE,137,substitution_0.20,substitution,0.2,kannst du mir bitte die aktuellen schlagzeilen vom r. b. b. geben,kannst lu mir eytte die aktfvllen sshlagseôlen vvm r. b. b. gebin,news_query,qa_stock,3,3
+de-DE,164,substitution_0.20,substitution,0.2,schalte meinen morgendlichen wecker ein,schalme meznen morxcndöichen mecker din,alarm_set,alarm_remove,3,3
+zh-CN,1,substitution_0.20,substitution,0.2,安静,安篇,audio_volume_mute,iot_hue_lightoff,3,3
+zh-CN,10,substitution_0.20,substitution,0.2,olly 告诉我格林威治时间加五的时间,olly 告诉限格林威治时间盛五的正雹,datetime_convert,datetime_query,3,3
+zh-CN,61,substitution_0.20,substitution,0.2,关闭小米智能插座,寄智小米智能插座,iot_wemo_off,iot_wemo_on,3,3
+zh-CN,117,substitution_0.20,substitution,0.2,之后解除静音模式,之后解架静荃模式,audio_volume_up,audio_volume_mute,3,3
+zh-CN,279,substitution_0.20,substitution,0.2,下次什么时候下雨啊,下次什么时候人点啊,weather_query,calendar_query,3,3
+zh-CN,299,substitution_0.20,substitution,0.2,给我关于马云的消息,给我关于马云的或孟,news_query,qa_factoid,3,3
+zh-CN,321,substitution_0.20,substitution,0.2,适合通勤的好歌曲,适塘通勤的犬歌曲,music_likeness,play_music,3,3
+zh-CN,507,substitution_0.20,substitution,0.2,我讨厌这首歌,我讨述这首歌,music_dislikeness,music_query,3,3
