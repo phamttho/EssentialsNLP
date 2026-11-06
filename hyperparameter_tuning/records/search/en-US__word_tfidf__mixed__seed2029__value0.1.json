@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "en-US",
+    "word_tfidf",
+    "mixed",
+    2029,
+    0.1
+  ],
+  "summary": {
+    "accuracy": 0.5862919132149902,
+    "macro_f1": 0.4052248978339904,
+    "rows": 22880,
+    "converged": true,
+    "iterations": 43,
+    "actual_epochs": null,
+    "best_epoch": null,
+    "stop_reason": "solver_converged",
+    "weights_sha256": "93f15f16edf361378b0fcb60a7bc59761a03fae1e11c8ebe308c583345774f9c",
+    "weights_file": "best.joblib",
+    "parameter_name": "C",
+    "parameter_value": 0.1,
+    "seed": 2029,
+    "best_validation_macro_f1": 0.4052248978339904
+  },
+  "files": {
+    "search/en-US__word_tfidf__mixed__seed2029__value0.1/validation_predictions.csv.gz": "1c3c937580c62ea09eb0687343e1b4dfe9bf4a1a59b08e4951b64d4c631dd18f",
+    "search/en-US__word_tfidf__mixed__seed2029__value0.1/validation_metrics.json": "5f996817cda209a54b1ae13c6b26047490bd478bc720c423f6fbb8b8790806ff",
+    "search/en-US__word_tfidf__mixed__seed2029__value0.1/training_history.json": "96f9c11e8947e3f1ae3d38e802f6e25b51bd720b1b5f43f76f6ff754ba9aca5c"
+  },
+  "finished": 1793752132.524278,
+  "provenance": "new_validation_only",
+  "started": 1793752125.592055
+}

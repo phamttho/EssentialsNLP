@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "runs": 72,
+  "evaluation_rows": 936,
+  "summary_rows": 312,
+  "seeds": [
+    2028,
+    2029,
+    2030
+  ],
+  "fingerprint": "21d0c0869f3ff2a25fdd29f6df018be75711fdb4a6ed11fe79e05657860756e0",
+  "std_ddof": 1,
+  "metric_scale": "0 to 1; drop = clean minus noisy per seed, then mean/std",
+  "baseline": "word_tfidf / clean",
+  "source_row": "zero-based frozen exported clean test CSV row",
+  "noise_data": "fixed across all training seeds"
+}

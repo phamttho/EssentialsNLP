@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "runs": 72,
+  "evaluation_rows": 936,
+  "summary_rows": 312,
+  "seeds": [
+    2028,
+    2029,
+    2030
+  ],
+  "std_ddof": 1,
+  "metric_scale": "0 to 1",
+  "drop": "clean minus noisy within seed, then mean/std",
+  "all_test_metrics_sha256": "3f38108fa22a9ebd7db21098a4f1e1164687e68027a6089bb2ed65510f0445f6",
+  "three_seed_summary_sha256": "3f8831e61ee234317d53f57fedc7491f3a2c2692b500f5daba85c45022515e75",
+  "final_training_summary_sha256": "8bc46191a7a2763a6361f6d9d6f55f2cfd6a00f4263dfbba9b1f6b88b0fce70b",
+  "baseline_vs_tuned_sha256": "75983f8fc8b8c5db456e976384bbc16ec3c9fe3ed8ca8c0658475bbf4297edbf"
+}

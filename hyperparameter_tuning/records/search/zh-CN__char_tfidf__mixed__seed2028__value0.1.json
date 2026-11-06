@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "zh-CN",
+    "char_tfidf",
+    "mixed",
+    2028,
+    0.1
+  ],
+  "summary": {
+    "accuracy": 0.4228052472250252,
+    "macro_f1": 0.21851216154201877,
+    "rows": 21494,
+    "converged": true,
+    "iterations": 48,
+    "actual_epochs": null,
+    "best_epoch": null,
+    "stop_reason": "solver_converged",
+    "weights_sha256": "d5c788edcc70a31eab4a1690c0eb4ff617ee5da2229eea66d6611f8556ce613b",
+    "weights_file": "best.joblib",
+    "parameter_name": "C",
+    "parameter_value": 0.1,
+    "seed": 2028,
+    "best_validation_macro_f1": 0.21851216154201877
+  },
+  "files": {
+    "search/zh-CN__char_tfidf__mixed__seed2028__value0.1/validation_predictions.csv.gz": "a1797dc0f4b44053ad6457d4ae77db7b4fa502a8bcb8e9d8933636b14816d1ec",
+    "search/zh-CN__char_tfidf__mixed__seed2028__value0.1/validation_metrics.json": "6f3fa8510233b56d6027306295268339c90ac3c99aacb38ded596a33dd8cd73d",
+    "search/zh-CN__char_tfidf__mixed__seed2028__value0.1/training_history.json": "8d57a1ad8b08ba7a40275e06da50bc892df055f8e33363962f821c5d0682f4a3"
+  },
+  "finished": 1793753376.6403818,
+  "provenance": "new_validation_only",
+  "started": 1793753327.9493597
+}

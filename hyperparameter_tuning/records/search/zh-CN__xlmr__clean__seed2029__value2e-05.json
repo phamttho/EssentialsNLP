@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "zh-CN",
+    "xlmr",
+    "clean",
+    2029,
+    2e-05
+  ],
+  "summary": {
+    "accuracy": 0.8597376387487387,
+    "macro_f1": 0.825819493138812
+  },
+  "files": {
+    "search/zh-CN__xlmr__clean__seed2029__value2e-05/validation_metrics.json": "b58fc341fb3c361bfb2997afa165e6ed454267e037b503bbb0bf0773a357d40e"
+  },
+  "finished": 1793752118.948183,
+  "provenance": "original_validation_reused",
+  "original_validation_sha256": "b58fc341fb3c361bfb2997afa165e6ed454267e037b503bbb0bf0773a357d40e",
+  "original_manifest_sha256": "9041b0c0efbe118a6754a146fa3d5f020f108809a0bbefbc19f6398ca62dfd8a"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "vi-VN",
+    "xlmr",
+    "clean",
+    2030,
+    2e-05
+  ],
+  "summary": {
+    "accuracy": 0.867238768298839,
+    "macro_f1": 0.8220774603551649
+  },
+  "files": {
+    "search/vi-VN__xlmr__clean__seed2030__value2e-05/validation_metrics.json": "2e597c0cbf0b91ad2d991d48bacc595c90ca4b198e6646c0e8120a7c9430362e"
+  },
+  "finished": 1793752118.8238583,
+  "provenance": "original_validation_reused",
+  "original_validation_sha256": "2e597c0cbf0b91ad2d991d48bacc595c90ca4b198e6646c0e8120a7c9430362e",
+  "original_manifest_sha256": "c8178042447606f2fd4b61b42e04778794c3f7fead554973257adb79f16a79c4"
+}

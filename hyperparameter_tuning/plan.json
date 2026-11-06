@@ -1,0 +1,58 @@
+{
+  "name": "hyperparameter_tuning",
+  "version": 1,
+  "role": "supplementary_validation_based_search",
+  "languages": [
+    "en-US",
+    "vi-VN",
+    "de-DE",
+    "zh-CN"
+  ],
+  "models": [
+    "word_tfidf",
+    "char_tfidf",
+    "xlmr"
+  ],
+  "conditions": [
+    "clean",
+    "mixed"
+  ],
+  "seeds": [
+    2028,
+    2029,
+    2030
+  ],
+  "grid": {
+    "word_tfidf": [
+      0.1,
+      1,
+      10
+    ],
+    "char_tfidf": [
+      0.1,
+      1,
+      10
+    ],
+    "xlmr": [
+      0.00001,
+      0.00002,
+      0.00003
+    ]
+  },
+  "selection": "For each language/model maximize mean CLEAN validation macro-F1 over two conditions and three seeds (6 scores). Exact ties prefer original parameter. Test never used.",
+  "gpus": [
+    0,
+    1,
+    2
+  ],
+  "cpu_workers": 2,
+  "threads_per_worker": 4,
+  "disk_floor_gib": 25,
+  "gpu_reservation_gib": 3.5,
+  "cpu_reservation_gib": 0.5,
+  "checkpoint_policy": "One best weights-only checkpoint per active fit; NO optimizer checkpoints. Interrupted fits restart from scratch. All completed job records survive.",
+  "search_cleanup": "Delete new weights only after validation predictions reloaded, verified, hashed and record committed.",
+  "final_cleanup": "For changed parameters retrain, export all 13 test sets, reload and verify predictions, record hashes, then delete new weights. Original selections reuse old predictions.",
+  "new_weights_retained_at_completion": 0,
+  "old_results": "Read-only; reuse original 72 validation records and selected old predictions."
+}

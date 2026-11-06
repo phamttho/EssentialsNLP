@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "de-DE",
+    "char_tfidf",
+    "clean",
+    2030,
+    1.0
+  ],
+  "summary": {
+    "accuracy": 0.7822177822177823,
+    "macro_f1": 0.7005011571453358
+  },
+  "files": {
+    "search/de-DE__char_tfidf__clean__seed2030__value1/validation_metrics.json": "e0bee9da3251fd87c2eaa29401518e117122db1781751d5ca89d3834ad862750"
+  },
+  "finished": 1793752118.8661473,
+  "provenance": "original_validation_reused",
+  "original_validation_sha256": "e0bee9da3251fd87c2eaa29401518e117122db1781751d5ca89d3834ad862750",
+  "original_manifest_sha256": "2f7391b9eb858d7f42c64ffdb021d74c740c3a6e54ece2a0a608b858436596a0"
+}

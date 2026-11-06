@@ -1,0 +1,19 @@
+[
+  {
+    "stage": "validation",
+    "accuracy": 0.8535502958579881,
+    "macro_f1": 0.8328558117119532,
+    "rows": 11440,
+    "converged": true,
+    "iterations": 105,
+    "actual_epochs": null,
+    "best_epoch": null,
+    "stop_reason": "solver_converged",
+    "weights_sha256": "e7bdb4d7300d4f6a65f645f30d95bcaed3c139f76017f87c0e2c452a8e2a370a",
+    "weights_file": "best.joblib",
+    "parameter_name": "C",
+    "parameter_value": 10.0,
+    "seed": 2028,
+    "best_validation_macro_f1": 0.8328558117119532
+  }
+]

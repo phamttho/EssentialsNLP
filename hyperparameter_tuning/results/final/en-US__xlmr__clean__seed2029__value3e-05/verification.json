@@ -1,0 +1,15 @@
+{
+  "language": "en-US",
+  "model": "xlmr",
+  "training_condition": "clean",
+  "seed": 2029,
+  "parameter_name": "learning_rate",
+  "parameter_value": 3e-05,
+  "verified": true,
+  "prediction_rows": 38662,
+  "test_conditions": 13,
+  "predictions_sha256": "485f2edb9c70b3894d261235999df4ee54b5dc610c852ce4cd0d8ab80fc1502a",
+  "metrics_sha256": "0263213b473a7eb07bfaac3cc50507da2c64a02ce1bed54b8f9f5c3f2fe5d2ff",
+  "origin": "new_selected_model",
+  "verified_at": 1793776489.3609364
+}

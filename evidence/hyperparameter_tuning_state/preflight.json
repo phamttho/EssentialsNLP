@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "old_fingerprint": "21d0c0869f3ff2a25fdd29f6df018be75711fdb4a6ed11fe79e05657860756e0",
+  "new_fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "free_gib": 45.53264236450195,
+  "full_concurrency_required_gib": 36.5,
+  "gpus": [
+    0,
+    1,
+    2
+  ],
+  "time": 1793752118.6704743
+}

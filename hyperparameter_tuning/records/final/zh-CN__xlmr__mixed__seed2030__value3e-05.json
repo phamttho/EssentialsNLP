@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "zh-CN",
+    "xlmr",
+    "mixed",
+    2030,
+    3e-05
+  ],
+  "summary": {
+    "accuracy": 0.8673057517658931,
+    "macro_f1": 0.8256026973953043,
+    "rows": 21494,
+    "actual_epochs": 27.0,
+    "best_epoch": 17.0,
+    "global_step": 18144,
+    "best_global_step": 11424,
+    "best_validation_macro_f1": 0.8256026973953043,
+    "patience_counter_at_stop": 10,
+    "stop_reason": "early_stopping",
+    "weights_sha256": "9fd8c87282b11e69d7a704739ac75f49ad39f1d94b1142352b49e5b62e520c75",
+    "weights_file": "best.safetensors",
+    "parameter_name": "learning_rate",
+    "parameter_value": 3e-05,
+    "seed": 2030,
+    "optimizer_checkpoints_saved": false,
+    "resume_mode": "restart_interrupted_task"
+  },
+  "files": {
+    "results/final/zh-CN__xlmr__mixed__seed2030__value3e-05/validation_predictions.csv.gz": "b9b6989515433d35780842fca6c1ee72ad5e141d00c299663abc5933504ba690",
+    "results/final/zh-CN__xlmr__mixed__seed2030__value3e-05/validation_metrics.json": "5bbff97847aec11721625144c7769efc14f124ad5c9670eaf60e09db7c750054",
+    "results/final/zh-CN__xlmr__mixed__seed2030__value3e-05/training_history.json": "dca9ea1f2d823990d32733476b6ccabe1bea1bb80e0446f0dc5c1a489801c2d8",
+    "results/final/zh-CN__xlmr__mixed__seed2030__value3e-05/validation_history.json": "164bd38b3f07dca4354e8475ae93e51bbfa20809e9f34dc786a0da67c0e9fcc1",
+    "results/final/zh-CN__xlmr__mixed__seed2030__value3e-05/predictions.csv.gz": "77bdcf3675b9de00887d50f7a2351c559503800810b66c25843ee5e3204e29bc",
+    "results/final/zh-CN__xlmr__mixed__seed2030__value3e-05/metrics.json": "6a00d3762c0870ab0b699e4c2b929beddf4e5798ffaff9e6c6d965df22d3e9bf",
+    "results/final/zh-CN__xlmr__mixed__seed2030__value3e-05/verification.json": "d8a184a8dfa9078203b5431201d21d4c04332e0f3195817aed47e467c657790d"
+  },
+  "finished": 1793781387.1670792,
+  "provenance": "selected_parameter_retrained",
+  "search_macro_f1": 0.8256026973953043,
+  "refit_validation_difference": 0.0,
+  "export": {
+    "language": "zh-CN",
+    "model": "xlmr",
+    "training_condition": "mixed",
+    "seed": 2030,
+    "parameter_name": "learning_rate",
+    "parameter_value": 3e-05,
+    "verified": true,
+    "prediction_rows": 38662,
+    "test_conditions": 13,
+    "predictions_sha256": "77bdcf3675b9de00887d50f7a2351c559503800810b66c25843ee5e3204e29bc",
+    "metrics_sha256": "6a00d3762c0870ab0b699e4c2b929beddf4e5798ffaff9e6c6d965df22d3e9bf"
+  },
+  "started": 1793779612.2186804
+}

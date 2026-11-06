@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "zh-CN",
+    "char_tfidf",
+    "clean",
+    2029,
+    10.0
+  ],
+  "summary": {
+    "accuracy": 0.7785065590312815,
+    "macro_f1": 0.7373012434096895,
+    "rows": 10747,
+    "converged": true,
+    "iterations": 107,
+    "actual_epochs": null,
+    "best_epoch": null,
+    "stop_reason": "solver_converged",
+    "weights_sha256": "c6eb7f5858859f88a4c66bba7bc5e1852e0f168ca6626d253192a6b025937b09",
+    "weights_file": "best.joblib",
+    "parameter_name": "C",
+    "parameter_value": 10.0,
+    "seed": 2029,
+    "best_validation_macro_f1": 0.7373012434096895
+  },
+  "files": {
+    "results/final/zh-CN__char_tfidf__clean__seed2029__value10/validation_predictions.csv.gz": "de17bfc23ca65d112f1721d5cf7a49d9726ac9e009b1676d1d61611b1b7547ec",
+    "results/final/zh-CN__char_tfidf__clean__seed2029__value10/validation_metrics.json": "4ccc890b9d139575f26ada9f9e2b022139038ab704bea6b72c69829702fcdf50",
+    "results/final/zh-CN__char_tfidf__clean__seed2029__value10/training_history.json": "dc5c0fc2ae21c1ccc1d1169f001b88eb1eb95bd36f7320f815ae7f5d8530f431",
+    "results/final/zh-CN__char_tfidf__clean__seed2029__value10/predictions.csv.gz": "623068ff1fdd59afe8ed55df18f036738960095c236118210abdc87954d70ca1",
+    "results/final/zh-CN__char_tfidf__clean__seed2029__value10/metrics.json": "c400ca357b24db95b285f43ee50bc5467df5585c3de4c2cdc69f9c529f8002f0",
+    "results/final/zh-CN__char_tfidf__clean__seed2029__value10/verification.json": "0e1e799b611af9482acd9f13d2a7cdec0e3b1b4c7b3a31a1d62020c51c940c71"
+  },
+  "finished": 1793776459.1073453,
+  "provenance": "selected_parameter_retrained",
+  "search_macro_f1": 0.7373012434096895,
+  "refit_validation_difference": 0.0,
+  "export": {
+    "language": "zh-CN",
+    "model": "char_tfidf",
+    "training_condition": "clean",
+    "seed": 2029,
+    "parameter_name": "C",
+    "parameter_value": 10.0,
+    "verified": true,
+    "prediction_rows": 38662,
+    "test_conditions": 13,
+    "predictions_sha256": "623068ff1fdd59afe8ed55df18f036738960095c236118210abdc87954d70ca1",
+    "metrics_sha256": "c400ca357b24db95b285f43ee50bc5467df5585c3de4c2cdc69f9c529f8002f0"
+  },
+  "started": 1793776431.437918
+}

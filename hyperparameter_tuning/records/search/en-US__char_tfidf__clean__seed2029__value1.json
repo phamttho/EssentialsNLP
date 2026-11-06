@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "en-US",
+    "char_tfidf",
+    "clean",
+    2029,
+    1.0
+  ],
+  "summary": {
+    "accuracy": 0.8086785009861933,
+    "macro_f1": 0.7398853946399686
+  },
+  "files": {
+    "search/en-US__char_tfidf__clean__seed2029__value1/validation_metrics.json": "1ef55f4c5899f51d2d576be84289c493e861b81b9531f6195a5d26092113d260"
+  },
+  "finished": 1793752118.7396877,
+  "provenance": "original_validation_reused",
+  "original_validation_sha256": "1ef55f4c5899f51d2d576be84289c493e861b81b9531f6195a5d26092113d260",
+  "original_manifest_sha256": "5db8cab5aa8b3f2ef163101f3045be2c9946b225ee76052367552cd3e9d0697d"
+}

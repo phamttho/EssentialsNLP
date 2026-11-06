@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "vi-VN",
+    "xlmr",
+    "mixed",
+    2030,
+    1e-05
+  ],
+  "summary": {
+    "accuracy": 0.8682483594144371,
+    "macro_f1": 0.8200169886033047,
+    "rows": 21692,
+    "actual_epochs": 27.0,
+    "best_epoch": 17.0,
+    "global_step": 18306,
+    "best_global_step": 11526,
+    "best_validation_macro_f1": 0.8200169886033047,
+    "patience_counter_at_stop": 10,
+    "stop_reason": "early_stopping",
+    "weights_sha256": "5ccf858a5854d8ee80ed9ab71c6f0e5b0f9c09ffaaff8df3786e42313d2ad7ef",
+    "weights_file": "best.safetensors",
+    "parameter_name": "learning_rate",
+    "parameter_value": 1e-05,
+    "seed": 2030,
+    "optimizer_checkpoints_saved": false,
+    "resume_mode": "restart_interrupted_task"
+  },
+  "files": {
+    "search/vi-VN__xlmr__mixed__seed2030__value1e-05/validation_predictions.csv.gz": "f97163659ce5e19246bacbc2b3e7c49f44068ebddda100fee0bb5f90452e60a4",
+    "search/vi-VN__xlmr__mixed__seed2030__value1e-05/validation_metrics.json": "8f7c7390ff0dc7011b275b2ed75c96dda82bf8d94fe71b0bfaca66a3858d5b34",
+    "search/vi-VN__xlmr__mixed__seed2030__value1e-05/training_history.json": "f107c7fff39d443b3ca55ff149c47dbf45408354a9c76084fed087d4ebc5df5d",
+    "search/vi-VN__xlmr__mixed__seed2030__value1e-05/validation_history.json": "b3fec338b1fd7c2100c8d2aeee5a11f2e26cd3e32d6c4bd172c33b6f91210c87"
+  },
+  "finished": 1793761019.2773106,
+  "provenance": "new_validation_only",
+  "started": 1793759245.660882
+}

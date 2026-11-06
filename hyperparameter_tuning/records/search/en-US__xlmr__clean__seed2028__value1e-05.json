@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "en-US",
+    "xlmr",
+    "clean",
+    2028,
+    1e-05
+  ],
+  "summary": {
+    "accuracy": 0.8900394477317555,
+    "macro_f1": 0.8647181006514089,
+    "rows": 11440,
+    "actual_epochs": 28.0,
+    "best_epoch": 18.0,
+    "global_step": 10024,
+    "best_global_step": 6444,
+    "best_validation_macro_f1": 0.8647181006514089,
+    "patience_counter_at_stop": 10,
+    "stop_reason": "early_stopping",
+    "weights_sha256": "424a4a3bfbe2e24efc50b795e58eec42df1afdd0ef5d59edb0917de58e8b967b",
+    "weights_file": "best.safetensors",
+    "parameter_name": "learning_rate",
+    "parameter_value": 1e-05,
+    "seed": 2028,
+    "optimizer_checkpoints_saved": false,
+    "resume_mode": "restart_interrupted_task"
+  },
+  "files": {
+    "search/en-US__xlmr__clean__seed2028__value1e-05/validation_predictions.csv.gz": "f6bfc05a2d4b32849803093df85aadf1ac08d1b9dc2df15a011955f7b4a6a2bb",
+    "search/en-US__xlmr__clean__seed2028__value1e-05/validation_metrics.json": "72d6d53e1cca30aa883bccd874a1833fc7d1befad6b1c5a99c3a1d231bada83a",
+    "search/en-US__xlmr__clean__seed2028__value1e-05/training_history.json": "b06ec16d9d2988d38498e8855e03f2ba873c4129755ff5e6bfa89dbc8993fb05",
+    "search/en-US__xlmr__clean__seed2028__value1e-05/validation_history.json": "3af32447b77e624acefcd0d33a46ec1feb974e079555ca408deb0a577b40abfe"
+  },
+  "finished": 1793753096.4742873,
+  "provenance": "new_validation_only",
+  "started": 1793752119.6553922
+}

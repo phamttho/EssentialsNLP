@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "vi-VN",
+    "word_tfidf",
+    "mixed",
+    2030,
+    1.0
+  ],
+  "summary": {
+    "accuracy": 0.8051489146895507,
+    "macro_f1": 0.7381248668707889
+  },
+  "files": {
+    "search/vi-VN__word_tfidf__mixed__seed2030__value1/validation_metrics.json": "50716c8f5ad091777b08001b1c5f5ba6e35dda7bb0ac287f18c03a18deb79a5a"
+  },
+  "finished": 1793752118.7937722,
+  "provenance": "original_validation_reused",
+  "original_validation_sha256": "50716c8f5ad091777b08001b1c5f5ba6e35dda7bb0ac287f18c03a18deb79a5a",
+  "original_manifest_sha256": "677cedff67544f3dff754a09f849ff4167c064b5a273da55b4bfd9311b2624d7"
+}

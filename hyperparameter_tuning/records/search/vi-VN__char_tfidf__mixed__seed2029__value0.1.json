@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "vi-VN",
+    "char_tfidf",
+    "mixed",
+    2029,
+    0.1
+  ],
+  "summary": {
+    "accuracy": 0.6163553760726905,
+    "macro_f1": 0.4411625964955622,
+    "rows": 21692,
+    "converged": true,
+    "iterations": 45,
+    "actual_epochs": null,
+    "best_epoch": null,
+    "stop_reason": "solver_converged",
+    "weights_sha256": "6797c30e980576cf9d257ac2f24268e699dcbf16bbd9260beec8168bd3f17ed2",
+    "weights_file": "best.joblib",
+    "parameter_name": "C",
+    "parameter_value": 0.1,
+    "seed": 2029,
+    "best_validation_macro_f1": 0.4411625964955622
+  },
+  "files": {
+    "search/vi-VN__char_tfidf__mixed__seed2029__value0.1/validation_predictions.csv.gz": "1150495766f3c6864c1257000d0744cf0ab028eb444e0394ed59bf58ed6a21b9",
+    "search/vi-VN__char_tfidf__mixed__seed2029__value0.1/validation_metrics.json": "34f4e9f141abc8b3734efc5b483eb6e6b679e9c6f3b8d132c256b93c54bfdccf",
+    "search/vi-VN__char_tfidf__mixed__seed2029__value0.1/training_history.json": "5af75e4968c075e88856a87af7c3e427b3d2d3e523a475cb8c938625a80e44c2"
+  },
+  "finished": 1793752597.8816886,
+  "provenance": "new_validation_only",
+  "started": 1793752549.0293448
+}

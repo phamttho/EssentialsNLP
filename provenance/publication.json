@@ -1,0 +1,22 @@
+{
+  "published_on": "2026-11-06",
+  "repository": "https://github.com/phamttho/EssentialsNLP",
+  "target_branch": "02_training",
+  "previous_branch_commit": "6f6bd31ad98edc64bee375a203f516cb70efbcda",
+  "main_commit_observed_before_publication": "22572f7ac63e2ff08f347785bc3513d00be7cfda",
+  "operation": "Normal commit replacing the target branch file tree; no history rewrite and no main update",
+  "source_root": "/root/autodl-tmp/essentials_in_text_and_speech/02_training",
+  "source_archive_sha256": "2367ea1c64bed232983c44061a1cf69f7335b939bb29f9d1d4bd6b4f962d9be1",
+  "included_source_files": 1276,
+  "included_source_bytes": 7230294,
+  "omitted": [
+    "Python environment and package caches",
+    "Pretrained and fine-tuned model weights",
+    "Dataset copies",
+    "Per-example prediction files",
+    "Runtime locks, process state and temporary work",
+    "Repeated distribution archives and raw console logs"
+  ],
+  "source_hash_manifest": "provenance/source_files.json",
+  "notes": "Archived experiment code and evidence are byte-identical to their recorded sources. Publication documentation, ignore rules and tools/verify_archive.py are additions. The preserved scripts require the documented Linux paths and external artifacts."
+}

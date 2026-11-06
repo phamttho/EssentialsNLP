@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "en-US",
+    "word_tfidf",
+    "clean",
+    2030,
+    1.0
+  ],
+  "summary": {
+    "accuracy": 0.8062130177514792,
+    "macro_f1": 0.7430379281245412
+  },
+  "files": {
+    "search/en-US__word_tfidf__clean__seed2030__value1/validation_metrics.json": "7d2ff31cb641be76eb5ca49b81ae589e7c06ae00d8b7bb9352774028304b5636"
+  },
+  "finished": 1793752118.6928213,
+  "provenance": "original_validation_reused",
+  "original_validation_sha256": "7d2ff31cb641be76eb5ca49b81ae589e7c06ae00d8b7bb9352774028304b5636",
+  "original_manifest_sha256": "8ea8ee12e9cb27d166d6b8d0e57f99f407cb024d88fa421a76f0464992fddfea"
+}

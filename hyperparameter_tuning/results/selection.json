@@ -1,0 +1,151 @@
+{
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "selected": [
+    {
+      "language": "en-US",
+      "model": "word_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.812197401429418,
+      "candidate_means": {
+        "0.1": 0.34510103213922283,
+        "1.0": 0.7515113632478763,
+        "10.0": 0.812197401429418
+      }
+    },
+    {
+      "language": "en-US",
+      "model": "char_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.8326489051288207,
+      "candidate_means": {
+        "0.1": 0.41370235684214884,
+        "1.0": 0.7526015232667886,
+        "10.0": 0.8326489051288207
+      }
+    },
+    {
+      "language": "en-US",
+      "model": "xlmr",
+      "value": 3e-05,
+      "parameter": "learning_rate",
+      "score": 0.8825518536854434,
+      "candidate_means": {
+        "1e-05": 0.8724303745241374,
+        "2e-05": 0.8794292311414429,
+        "3e-05": 0.8825518536854434
+      }
+    },
+    {
+      "language": "vi-VN",
+      "model": "word_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.7674779850442726,
+      "candidate_means": {
+        "0.1": 0.3745088854928539,
+        "1.0": 0.7272113769912335,
+        "10.0": 0.7674779850442726
+      }
+    },
+    {
+      "language": "vi-VN",
+      "model": "char_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.7832044342167113,
+      "candidate_means": {
+        "0.1": 0.384010726328884,
+        "1.0": 0.7264919113968357,
+        "10.0": 0.7832044342167113
+      }
+    },
+    {
+      "language": "vi-VN",
+      "model": "xlmr",
+      "value": 2e-05,
+      "parameter": "learning_rate",
+      "score": 0.8275937869994315,
+      "candidate_means": {
+        "1e-05": 0.8139891496873348,
+        "2e-05": 0.8275937869994315,
+        "3e-05": 0.824379570409686
+      }
+    },
+    {
+      "language": "de-DE",
+      "model": "word_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.7650895581866072,
+      "candidate_means": {
+        "0.1": 0.260601181007577,
+        "1.0": 0.6628525768898755,
+        "10.0": 0.7650895581866072
+      }
+    },
+    {
+      "language": "de-DE",
+      "model": "char_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.7999609199151668,
+      "candidate_means": {
+        "0.1": 0.37825056382362143,
+        "1.0": 0.7161534458766239,
+        "10.0": 0.7999609199151668
+      }
+    },
+    {
+      "language": "de-DE",
+      "model": "xlmr",
+      "value": 2e-05,
+      "parameter": "learning_rate",
+      "score": 0.8555812417971032,
+      "candidate_means": {
+        "1e-05": 0.8361339835397927,
+        "2e-05": 0.8555812417971032,
+        "3e-05": 0.8530551108390632
+      }
+    },
+    {
+      "language": "zh-CN",
+      "model": "word_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.7461688526430599,
+      "candidate_means": {
+        "0.1": 0.2877664797006376,
+        "1.0": 0.7060922460557368,
+        "10.0": 0.7461688526430599
+      }
+    },
+    {
+      "language": "zh-CN",
+      "model": "char_tfidf",
+      "value": 10.0,
+      "parameter": "C",
+      "score": 0.7342463172777673,
+      "candidate_means": {
+        "0.1": 0.18910216510798347,
+        "1.0": 0.6808306459586855,
+        "10.0": 0.7342463172777673
+      }
+    },
+    {
+      "language": "zh-CN",
+      "model": "xlmr",
+      "value": 3e-05,
+      "parameter": "learning_rate",
+      "score": 0.830430138419238,
+      "candidate_means": {
+        "1e-05": 0.8230751937477955,
+        "2e-05": 0.8303384240711427,
+        "3e-05": 0.830430138419238
+      }
+    }
+  ],
+  "criterion": "For each language/model maximize mean CLEAN validation macro-F1 over two conditions and three seeds (6 scores). Exact ties prefer original parameter. Test never used.",
+  "locked_before_test": true
+}

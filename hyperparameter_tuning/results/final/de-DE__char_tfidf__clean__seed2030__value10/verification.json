@@ -1,0 +1,15 @@
+{
+  "language": "de-DE",
+  "model": "char_tfidf",
+  "training_condition": "clean",
+  "seed": 2030,
+  "parameter_name": "C",
+  "parameter_value": 10.0,
+  "verified": true,
+  "prediction_rows": 38662,
+  "test_conditions": 13,
+  "predictions_sha256": "170550669107fe5615d8670fdba8f36260f463013a6f44e72f4659068637a65d",
+  "metrics_sha256": "fff1c3da67987df6259574f5013061c0d79c7f2bef3dc3366a6b1191c8db5cec",
+  "origin": "new_selected_model",
+  "verified_at": 1793776178.4840257
+}

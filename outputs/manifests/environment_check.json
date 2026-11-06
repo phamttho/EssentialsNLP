@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "prefix": "/root/autodl-tmp/essentials_in_text_and_speech/02_training/environment",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "accelerate": "1.10.1",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "jieba": "0.42.1"
+  },
+  "cuda_build": "12.8",
+  "architectures": "sm_70 sm_75 sm_80 sm_86 sm_90 sm_100 sm_120",
+  "snapshot": "/root/autodl-tmp/essentials_in_text_and_speech/02_training/cache/pretrained/e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "weight_hashes_verified": false,
+  "disk_free_gib": 236.79656600952148
+}

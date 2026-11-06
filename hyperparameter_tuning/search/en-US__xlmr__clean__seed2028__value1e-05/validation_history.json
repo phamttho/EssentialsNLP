@@ -1,0 +1,254 @@
+[
+  {
+    "epoch": 1.0,
+    "global_step": 358,
+    "validation_macro_f1": 0.21650082232769208,
+    "best_macro_f1": 0.21650082232769208,
+    "best_epoch": 1.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 2.0,
+    "global_step": 716,
+    "validation_macro_f1": 0.41125557844447624,
+    "best_macro_f1": 0.41125557844447624,
+    "best_epoch": 2.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 3.0,
+    "global_step": 1074,
+    "validation_macro_f1": 0.5644602042901894,
+    "best_macro_f1": 0.5644602042901894,
+    "best_epoch": 3.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 4.0,
+    "global_step": 1432,
+    "validation_macro_f1": 0.6154442351694916,
+    "best_macro_f1": 0.6154442351694916,
+    "best_epoch": 4.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 5.0,
+    "global_step": 1790,
+    "validation_macro_f1": 0.6958408165780318,
+    "best_macro_f1": 0.6958408165780318,
+    "best_epoch": 5.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 6.0,
+    "global_step": 2148,
+    "validation_macro_f1": 0.7306061874415455,
+    "best_macro_f1": 0.7306061874415455,
+    "best_epoch": 6.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 7.0,
+    "global_step": 2506,
+    "validation_macro_f1": 0.771830089938511,
+    "best_macro_f1": 0.771830089938511,
+    "best_epoch": 7.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 8.0,
+    "global_step": 2864,
+    "validation_macro_f1": 0.7876801626169345,
+    "best_macro_f1": 0.7876801626169345,
+    "best_epoch": 8.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 9.0,
+    "global_step": 3222,
+    "validation_macro_f1": 0.8206614194768816,
+    "best_macro_f1": 0.8206614194768816,
+    "best_epoch": 9.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 10.0,
+    "global_step": 3580,
+    "validation_macro_f1": 0.8267067503512661,
+    "best_macro_f1": 0.8267067503512661,
+    "best_epoch": 10.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 11.0,
+    "global_step": 3938,
+    "validation_macro_f1": 0.8340164185656234,
+    "best_macro_f1": 0.8340164185656234,
+    "best_epoch": 11.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 12.0,
+    "global_step": 4296,
+    "validation_macro_f1": 0.835107804983578,
+    "best_macro_f1": 0.835107804983578,
+    "best_epoch": 12.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 13.0,
+    "global_step": 4654,
+    "validation_macro_f1": 0.8440697924566752,
+    "best_macro_f1": 0.8440697924566752,
+    "best_epoch": 13.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 14.0,
+    "global_step": 5012,
+    "validation_macro_f1": 0.8385534642176368,
+    "best_macro_f1": 0.8440697924566752,
+    "best_epoch": 13.0,
+    "patience_counter": 1,
+    "improved": false
+  },
+  {
+    "epoch": 15.0,
+    "global_step": 5370,
+    "validation_macro_f1": 0.8600409424140736,
+    "best_macro_f1": 0.8600409424140736,
+    "best_epoch": 15.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 16.0,
+    "global_step": 5728,
+    "validation_macro_f1": 0.8519000421141869,
+    "best_macro_f1": 0.8600409424140736,
+    "best_epoch": 15.0,
+    "patience_counter": 1,
+    "improved": false
+  },
+  {
+    "epoch": 17.0,
+    "global_step": 6086,
+    "validation_macro_f1": 0.8558550340203321,
+    "best_macro_f1": 0.8600409424140736,
+    "best_epoch": 15.0,
+    "patience_counter": 2,
+    "improved": false
+  },
+  {
+    "epoch": 18.0,
+    "global_step": 6444,
+    "validation_macro_f1": 0.8647181006514089,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 0,
+    "improved": true
+  },
+  {
+    "epoch": 19.0,
+    "global_step": 6802,
+    "validation_macro_f1": 0.8614205558877525,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 1,
+    "improved": false
+  },
+  {
+    "epoch": 20.0,
+    "global_step": 7160,
+    "validation_macro_f1": 0.8637603061788067,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 2,
+    "improved": false
+  },
+  {
+    "epoch": 21.0,
+    "global_step": 7518,
+    "validation_macro_f1": 0.8629530278350833,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 3,
+    "improved": false
+  },
+  {
+    "epoch": 22.0,
+    "global_step": 7876,
+    "validation_macro_f1": 0.8631343366272268,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 4,
+    "improved": false
+  },
+  {
+    "epoch": 23.0,
+    "global_step": 8234,
+    "validation_macro_f1": 0.8598726517402818,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 5,
+    "improved": false
+  },
+  {
+    "epoch": 24.0,
+    "global_step": 8592,
+    "validation_macro_f1": 0.8633151057799674,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 6,
+    "improved": false
+  },
+  {
+    "epoch": 25.0,
+    "global_step": 8950,
+    "validation_macro_f1": 0.8611031957702515,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 7,
+    "improved": false
+  },
+  {
+    "epoch": 26.0,
+    "global_step": 9308,
+    "validation_macro_f1": 0.861117126153433,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 8,
+    "improved": false
+  },
+  {
+    "epoch": 27.0,
+    "global_step": 9666,
+    "validation_macro_f1": 0.8613347430321182,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 9,
+    "improved": false
+  },
+  {
+    "epoch": 28.0,
+    "global_step": 10024,
+    "validation_macro_f1": 0.8621607300293274,
+    "best_macro_f1": 0.8647181006514089,
+    "best_epoch": 18.0,
+    "patience_counter": 10,
+    "improved": false
+  }
+]
