@@ -1,0 +1,100 @@
+{
+  "run_id": "de-DE__char_tfidf__clean__seed2029",
+  "status": "completed",
+  "fingerprint": "21d0c0869f3ff2a25fdd29f6df018be75711fdb4a6ed11fe79e05657860756e0",
+  "pid": 124218,
+  "started": 1792021330.3272562,
+  "attempt_started": 1792021330.327257,
+  "attempt": 1,
+  "config": {
+    "schema_version": 2,
+    "seeds": [
+      2028,
+      2029,
+      2030
+    ],
+    "languages": [
+      "en-US",
+      "vi-VN",
+      "de-DE",
+      "zh-CN"
+    ],
+    "models": [
+      "word_tfidf",
+      "char_tfidf",
+      "xlmr"
+    ],
+    "conditions": [
+      "clean",
+      "mixed"
+    ],
+    "word_tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 100000,
+      "sublinear_tf": true
+    },
+    "char_tfidf": {
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 150000,
+      "sublinear_tf": true
+    },
+    "logistic_regression": {
+      "C": 1,
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "xlmr": {
+      "model_id": "FacebookAI/xlm-roberta-base",
+      "max_epochs": 30,
+      "patience": 10,
+      "min_delta": 0,
+      "learning_rate": 2e-05,
+      "lr_scheduler_type": "linear",
+      "warmup_ratio": 0,
+      "weight_decay": 0.01,
+      "max_length": 64,
+      "batch_size": 16,
+      "gradient_accumulation_steps": 2,
+      "eval_batch_size": 64,
+      "precision": "bf16",
+      "logging_steps": 50,
+      "save_total_limit": 2
+    },
+    "gpu_languages": {
+      "0": "en-US",
+      "1": "vi-VN",
+      "2": "de-DE",
+      "3": "zh-CN"
+    },
+    "cpu_workers": 2,
+    "threads_per_worker": 4,
+    "minimum_free_disk_gib": 25,
+    "cleanup_completed_checkpoints": true
+  },
+  "seed": 2029,
+  "gpu": "",
+  "prediction_rows": 38662,
+  "test_conditions": 13,
+  "predictions_sha256": "c1726cc1f1abb8adf9728d339a5e1f13c7054d269a693f23441c6e03be53d1bd",
+  "metrics_sha256": "b6527aaad414a1d21b3a59a53e82002200279d0e3959d8e971c37d6d6251a639",
+  "finished": 1792021357.2656312,
+  "training_summary": {
+    "rows": 11097,
+    "converged": true,
+    "iterations": 63,
+    "actual_epochs": null,
+    "best_epoch": null,
+    "stop_reason": "solver_converged"
+  },
+  "model_hashes": {
+    "model.joblib": "82b89273f984447604989733c5b312116605488ddf04d4c7ae9d3982cee7ba59"
+  }
+}

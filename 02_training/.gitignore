@@ -1,0 +1,45 @@
+# Runtime installations, downloaded assets and weights
+environment/
+.venv/
+cache/
+models/
+checkpoints/
+*.safetensors
+*.joblib
+*.pt
+*.pth
+*.bin
+
+# Temporary work, process locks and runtime state
+tmp/
+work/
+locks/
+logs/
+__pycache__/
+*.py[cod]
+*.lock
+*.pid
+*.tmp
+/hyperparameter_tuning/state/
+/hyperparameter_tuning/selftest/
+/hyperparameter_tuning/publication/
+
+# Full datasets and per-example predictions are separate artifacts
+/exported_data/
+/outputs/predictions/
+*.csv.gz
+*.zip
+*.tar
+*.tar.gz
+
+# Local credentials and editor files
+.env
+.env.*
+!.env.example
+*.pem
+id_rsa*
+id_ed25519*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

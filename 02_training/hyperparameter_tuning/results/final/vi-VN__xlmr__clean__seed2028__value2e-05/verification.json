@@ -1,0 +1,15 @@
+{
+  "language": "vi-VN",
+  "model": "xlmr",
+  "training_condition": "clean",
+  "seed": 2028,
+  "parameter_name": "learning_rate",
+  "parameter_value": 2e-05,
+  "verified": true,
+  "prediction_rows": 38662,
+  "test_conditions": 13,
+  "predictions_sha256": "e580c237e75d6588bea7b175686599b8b1db4fe93cc9a242d00ec934a1f8c649",
+  "metrics_sha256": "db9099bb24422e2a5980d853aa54fde49ec5eba3dd05b63bce26920fc3c884f2",
+  "origin": "verified_original_run",
+  "verified_at": 1793776019.5952425
+}

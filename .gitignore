@@ -1,11 +1,7 @@
 .idea/
-typo_data/
-.venv/
-
-# Local training handoff, do not commit
-02_training/
-
+.vscode/
 .venv/
 __pycache__/
-.venv/
-__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

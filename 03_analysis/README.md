@@ -24,8 +24,7 @@ A clean team layout can look like:
 
 ```text
 EssentialsNLP/
-├── EssentialsNLP.ipynb           # Part 01, data processing
-├── exported_data/                # Part 01 exports
+├── 01_data_processing/           # Part 01 data processing and exported data
 ├── 03_analysis/                  # this folder
 │   ├── run_analysis.py
 │   ├── requirements.txt
@@ -47,7 +46,7 @@ Create/activate any normal Python environment, then:
 pip install -r 03_analysis/requirements.txt
 python 03_analysis/run_analysis.py \
   --handoff /PATH/TO/handoff_03_20261016 \
-  --data-root /PATH/TO/EssentialsNLP/exported_data \
+  --data-root /PATH/TO/EssentialsNLP/01_data_processing/exported_data \
   --output 03_analysis/analysis_outputs
 ```
 

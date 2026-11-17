@@ -1,0 +1,109 @@
+{
+  "run_id": "vi-VN__xlmr__mixed__seed2030",
+  "status": "completed",
+  "fingerprint": "21d0c0869f3ff2a25fdd29f6df018be75711fdb4a6ed11fe79e05657860756e0",
+  "pid": 127698,
+  "started": 1792028746.120557,
+  "attempt_started": 1792028746.1205575,
+  "attempt": 1,
+  "config": {
+    "schema_version": 2,
+    "seeds": [
+      2028,
+      2029,
+      2030
+    ],
+    "languages": [
+      "en-US",
+      "vi-VN",
+      "de-DE",
+      "zh-CN"
+    ],
+    "models": [
+      "word_tfidf",
+      "char_tfidf",
+      "xlmr"
+    ],
+    "conditions": [
+      "clean",
+      "mixed"
+    ],
+    "word_tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 100000,
+      "sublinear_tf": true
+    },
+    "char_tfidf": {
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 150000,
+      "sublinear_tf": true
+    },
+    "logistic_regression": {
+      "C": 1,
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "xlmr": {
+      "model_id": "FacebookAI/xlm-roberta-base",
+      "max_epochs": 30,
+      "patience": 10,
+      "min_delta": 0,
+      "learning_rate": 2e-05,
+      "lr_scheduler_type": "linear",
+      "warmup_ratio": 0,
+      "weight_decay": 0.01,
+      "max_length": 64,
+      "batch_size": 16,
+      "gradient_accumulation_steps": 2,
+      "eval_batch_size": 64,
+      "precision": "bf16",
+      "logging_steps": 50,
+      "save_total_limit": 2
+    },
+    "gpu_languages": {
+      "0": "en-US",
+      "1": "vi-VN",
+      "2": "de-DE",
+      "3": "zh-CN"
+    },
+    "cpu_workers": 2,
+    "threads_per_worker": 4,
+    "minimum_free_disk_gib": 25,
+    "cleanup_completed_checkpoints": true
+  },
+  "seed": 2030,
+  "gpu": "1",
+  "prediction_rows": 38662,
+  "test_conditions": 13,
+  "predictions_sha256": "0e13e2d5c22a1666a34d28278649cefdc26b64639f3877c36441ed77f6d35508",
+  "metrics_sha256": "eb047a4426d0c49049a2e64eaf08ed6ecca176a82bc711c873a1273cb98f229b",
+  "finished": 1792031095.9619164,
+  "training_summary": {
+    "rows": 21692,
+    "actual_epochs": 30.0,
+    "best_epoch": 23.0,
+    "global_step": 20340,
+    "best_checkpoint": "checkpoint-15594",
+    "best_validation_macro_f1": 0.8364127860302994,
+    "stop_reason": "epoch_limit",
+    "patience_counter_at_stop": 7,
+    "resumed_from": null
+  },
+  "model_hashes": {
+    "config.json": "3b64f7447160c55b0e6a27ca9676528069920099d517a1c7364fec84c521db81",
+    "model.safetensors": "7da80ec12f6fffde614ae0d5c171387ad7fed0c45503fbf39b471d460fafe482",
+    "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "special_tokens_map.json": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f",
+    "tokenizer.json": "ea09a711f7adcb7e3bc41b614e59b829fc98e7b50b94d273d029315524364069",
+    "tokenizer_config.json": "ccf223ba3d5b3cc7fa6c3bf451f3bb40557a5c92b0aa33f63d17802ff1a96fd9",
+    "training_args.bin": "0d8d7270eb819fa794fcfaba4a4dcaeaa392f91d52063110cd668f853b2eb403"
+  }
+}

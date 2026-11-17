@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "de-DE",
+    "xlmr",
+    "mixed",
+    2028,
+    2e-05
+  ],
+  "summary": {
+    "accuracy": 0.8676323676323676,
+    "macro_f1": 0.8469494065644656
+  },
+  "files": {
+    "search/de-DE__xlmr__mixed__seed2028__value2e-05/validation_metrics.json": "18e2209f75e81e76e50f0f9887786ff95307b8732565d7652f9b94bf5ff507f6"
+  },
+  "finished": 1793752118.8910394,
+  "provenance": "original_validation_reused",
+  "original_validation_sha256": "18e2209f75e81e76e50f0f9887786ff95307b8732565d7652f9b94bf5ff507f6",
+  "original_manifest_sha256": "e3ae07f69688e85fe1b45ec4b3143d0a5721e6fdda6db84ce62e8a7424af8111"
+}

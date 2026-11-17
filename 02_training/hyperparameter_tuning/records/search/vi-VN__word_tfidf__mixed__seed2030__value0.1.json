@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "vi-VN",
+    "word_tfidf",
+    "mixed",
+    2030,
+    0.1
+  ],
+  "summary": {
+    "accuracy": 0.5981827359919233,
+    "macro_f1": 0.4149482241996879,
+    "rows": 21692,
+    "converged": true,
+    "iterations": 48,
+    "actual_epochs": null,
+    "best_epoch": null,
+    "stop_reason": "solver_converged",
+    "weights_sha256": "e75eeaa7b0a4ff4ea8142dd2f4565df9b02298cb112b0f7d38a22d1b51a4b7f0",
+    "weights_file": "best.joblib",
+    "parameter_name": "C",
+    "parameter_value": 0.1,
+    "seed": 2030,
+    "best_validation_macro_f1": 0.4149482241996879
+  },
+  "files": {
+    "search/vi-VN__word_tfidf__mixed__seed2030__value0.1/validation_predictions.csv.gz": "07176aed87e0d028a39dbb76065a030b0af3dca34100809c0966cc75f3a10e61",
+    "search/vi-VN__word_tfidf__mixed__seed2030__value0.1/validation_metrics.json": "1410e0bdc24e734701eeb8900d86acdb4cedeb9826ddb5f55e5c065240ac280c",
+    "search/vi-VN__word_tfidf__mixed__seed2030__value0.1/training_history.json": "8e5bbc7809a7e826ce39ded31254ade09faa4e80a2c75f895c803e3f847e2dc6"
+  },
+  "finished": 1793752456.4284127,
+  "provenance": "new_validation_only",
+  "started": 1793752446.8820395
+}

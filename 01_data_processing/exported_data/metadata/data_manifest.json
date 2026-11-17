@@ -1,0 +1,340 @@
+{
+  "dataset": "AmazonScience/massive",
+  "languages": [
+    "en-US",
+    "vi-VN",
+    "de-DE",
+    "zh-CN"
+  ],
+  "splits": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "base_seed": 20261009,
+  "typo_types": [
+    "deletion",
+    "substitution",
+    "duplication",
+    "swap"
+  ],
+  "noise_levels": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "clean": {
+    "en-US": {
+      "train": {
+        "path": "clean/en-US/train.csv",
+        "rows": 11440
+      },
+      "validation": {
+        "path": "clean/en-US/validation.csv",
+        "rows": 2028
+      },
+      "test": {
+        "path": "clean/en-US/test.csv",
+        "rows": 2974
+      }
+    },
+    "vi-VN": {
+      "train": {
+        "path": "clean/vi-VN/train.csv",
+        "rows": 10846
+      },
+      "validation": {
+        "path": "clean/vi-VN/validation.csv",
+        "rows": 1981
+      },
+      "test": {
+        "path": "clean/vi-VN/test.csv",
+        "rows": 2974
+      }
+    },
+    "de-DE": {
+      "train": {
+        "path": "clean/de-DE/train.csv",
+        "rows": 11097
+      },
+      "validation": {
+        "path": "clean/de-DE/validation.csv",
+        "rows": 2002
+      },
+      "test": {
+        "path": "clean/de-DE/test.csv",
+        "rows": 2974
+      }
+    },
+    "zh-CN": {
+      "train": {
+        "path": "clean/zh-CN/train.csv",
+        "rows": 10747
+      },
+      "validation": {
+        "path": "clean/zh-CN/validation.csv",
+        "rows": 1982
+      },
+      "test": {
+        "path": "clean/zh-CN/test.csv",
+        "rows": 2974
+      }
+    }
+  },
+  "augmented": {
+    "en-US": {
+      "path": "augmented/en-US_train_augmented.csv",
+      "rows": 22880
+    },
+    "vi-VN": {
+      "path": "augmented/vi-VN_train_augmented.csv",
+      "rows": 21692
+    },
+    "de-DE": {
+      "path": "augmented/de-DE_train_augmented.csv",
+      "rows": 22194
+    },
+    "zh-CN": {
+      "path": "augmented/zh-CN_train_augmented.csv",
+      "rows": 21494
+    }
+  },
+  "corrupted_test": {
+    "en-US": {
+      "deletion": {
+        "0.05": {
+          "path": "corrupted_test/en-US/deletion_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/en-US/deletion_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/en-US/deletion_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "substitution": {
+        "0.05": {
+          "path": "corrupted_test/en-US/substitution_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/en-US/substitution_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/en-US/substitution_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "duplication": {
+        "0.05": {
+          "path": "corrupted_test/en-US/duplication_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/en-US/duplication_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/en-US/duplication_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "swap": {
+        "0.05": {
+          "path": "corrupted_test/en-US/swap_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/en-US/swap_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/en-US/swap_0.20.csv",
+          "rows": 2974
+        }
+      }
+    },
+    "vi-VN": {
+      "deletion": {
+        "0.05": {
+          "path": "corrupted_test/vi-VN/deletion_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/vi-VN/deletion_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/vi-VN/deletion_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "substitution": {
+        "0.05": {
+          "path": "corrupted_test/vi-VN/substitution_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/vi-VN/substitution_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/vi-VN/substitution_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "duplication": {
+        "0.05": {
+          "path": "corrupted_test/vi-VN/duplication_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/vi-VN/duplication_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/vi-VN/duplication_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "swap": {
+        "0.05": {
+          "path": "corrupted_test/vi-VN/swap_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/vi-VN/swap_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/vi-VN/swap_0.20.csv",
+          "rows": 2974
+        }
+      }
+    },
+    "de-DE": {
+      "deletion": {
+        "0.05": {
+          "path": "corrupted_test/de-DE/deletion_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/de-DE/deletion_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/de-DE/deletion_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "substitution": {
+        "0.05": {
+          "path": "corrupted_test/de-DE/substitution_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/de-DE/substitution_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/de-DE/substitution_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "duplication": {
+        "0.05": {
+          "path": "corrupted_test/de-DE/duplication_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/de-DE/duplication_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/de-DE/duplication_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "swap": {
+        "0.05": {
+          "path": "corrupted_test/de-DE/swap_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/de-DE/swap_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/de-DE/swap_0.20.csv",
+          "rows": 2974
+        }
+      }
+    },
+    "zh-CN": {
+      "deletion": {
+        "0.05": {
+          "path": "corrupted_test/zh-CN/deletion_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/zh-CN/deletion_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/zh-CN/deletion_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "substitution": {
+        "0.05": {
+          "path": "corrupted_test/zh-CN/substitution_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/zh-CN/substitution_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/zh-CN/substitution_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "duplication": {
+        "0.05": {
+          "path": "corrupted_test/zh-CN/duplication_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/zh-CN/duplication_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/zh-CN/duplication_0.20.csv",
+          "rows": 2974
+        }
+      },
+      "swap": {
+        "0.05": {
+          "path": "corrupted_test/zh-CN/swap_0.05.csv",
+          "rows": 2974
+        },
+        "0.10": {
+          "path": "corrupted_test/zh-CN/swap_0.10.csv",
+          "rows": 2974
+        },
+        "0.20": {
+          "path": "corrupted_test/zh-CN/swap_0.20.csv",
+          "rows": 2974
+        }
+      }
+    }
+  },
+  "metadata": {
+    "intent_mapping": "metadata/intent_mapping.json",
+    "manifest": "metadata/data_manifest.json"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "en-US",
+    "xlmr",
+    "mixed",
+    2030,
+    3e-05
+  ],
+  "summary": {
+    "accuracy": 0.893491124260355,
+    "macro_f1": 0.8791251457702546,
+    "rows": 22880,
+    "actual_epochs": 30.0,
+    "best_epoch": 25.0,
+    "global_step": 21450,
+    "best_global_step": 17875,
+    "best_validation_macro_f1": 0.8791251457702546,
+    "patience_counter_at_stop": 5,
+    "stop_reason": "epoch_limit",
+    "weights_sha256": "02ce3597386036e9b7c204b3c197bbc377e8127f3a70f119e3577441b297dfe4",
+    "weights_file": "best.safetensors",
+    "parameter_name": "learning_rate",
+    "parameter_value": 3e-05,
+    "seed": 2030,
+    "optimizer_checkpoints_saved": false,
+    "resume_mode": "restart_interrupted_task"
+  },
+  "files": {
+    "results/final/en-US__xlmr__mixed__seed2030__value3e-05/validation_predictions.csv.gz": "75d63fe1d75190a08bff858f4bc603aada119289869816e3f1e4a24af5fb5824",
+    "results/final/en-US__xlmr__mixed__seed2030__value3e-05/validation_metrics.json": "b4353b22e5b5b167bec75b68d0085c91f7a39821ebea56c15f1d6547318e928e",
+    "results/final/en-US__xlmr__mixed__seed2030__value3e-05/training_history.json": "fac00b029eb121dafe98be5cda8b09d0e68cfe71c509d106664b38199e9e3913",
+    "results/final/en-US__xlmr__mixed__seed2030__value3e-05/validation_history.json": "f7203a8b191b9b6d12e307d74c9d50b9c821fe5c01c98a6b54e990210df06d65",
+    "results/final/en-US__xlmr__mixed__seed2030__value3e-05/predictions.csv.gz": "68dd50c47e23c2efe30d7ac879fda767405688ffdff53a79c178138532270cfd",
+    "results/final/en-US__xlmr__mixed__seed2030__value3e-05/metrics.json": "3e65bc8a8ac84c9bfb2588df4edc74510ebd5b5f7c0e5a0171db617d20fb5580",
+    "results/final/en-US__xlmr__mixed__seed2030__value3e-05/verification.json": "74550733d4a65c0ffb7cd6cabe9d4e30c9a6642176581bd5c0486f1acdab1798"
+  },
+  "finished": 1793778613.069644,
+  "provenance": "selected_parameter_retrained",
+  "search_macro_f1": 0.8791251457702546,
+  "refit_validation_difference": 0.0,
+  "export": {
+    "language": "en-US",
+    "model": "xlmr",
+    "training_condition": "mixed",
+    "seed": 2030,
+    "parameter_name": "learning_rate",
+    "parameter_value": 3e-05,
+    "verified": true,
+    "prediction_rows": 38662,
+    "test_conditions": 13,
+    "predictions_sha256": "68dd50c47e23c2efe30d7ac879fda767405688ffdff53a79c178138532270cfd",
+    "metrics_sha256": "3e65bc8a8ac84c9bfb2588df4edc74510ebd5b5f7c0e5a0171db617d20fb5580"
+  },
+  "started": 1793776554.5394535
+}

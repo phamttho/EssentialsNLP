@@ -1,0 +1,15 @@
+{
+  "language": "vi-VN",
+  "model": "word_tfidf",
+  "training_condition": "mixed",
+  "seed": 2029,
+  "parameter_name": "C",
+  "parameter_value": 10.0,
+  "verified": true,
+  "prediction_rows": 38662,
+  "test_conditions": 13,
+  "predictions_sha256": "5b33b025207ff7a83fbc166aaa0a9df5b83c4a56a0fb1256c23f0ae251cc1c77",
+  "metrics_sha256": "db3a33442253348777476ff1f24ee6196b2d12374307d8dfe0a689a0fd754305",
+  "origin": "new_selected_model",
+  "verified_at": 1793775785.0078905
+}

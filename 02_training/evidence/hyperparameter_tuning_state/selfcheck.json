@@ -1,0 +1,51 @@
+{
+  "unit_tests_passed": 20,
+  "real_cpu_trainer": {
+    "status": "PASS",
+    "epochs": 11,
+    "best_epoch": 1,
+    "patience_counter": 10
+  },
+  "legacy_import": {
+    "language": "en-US",
+    "model": "word_tfidf",
+    "training_condition": "clean",
+    "seed": 2028,
+    "parameter_name": "C",
+    "parameter_value": 1.0,
+    "verified": true,
+    "prediction_rows": 38662,
+    "test_conditions": 13,
+    "predictions_sha256": "ff39cafa6e65a7abe9e150301aea7d2e61022cd9fbc571e4693778cd10285bb4",
+    "metrics_sha256": "fbe1600dacc203844186d44b39b1bf6f873a07734a610fb54063a6e89e7542d2"
+  },
+  "hardware": {
+    "status": "PASS",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1",
+    "sklearn": "1.7.2",
+    "pandas": "2.3.3",
+    "accelerate": "1.10.1",
+    "gpus": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 5090",
+        "bf16_check": "PASS"
+      },
+      {
+        "index": 1,
+        "name": "NVIDIA GeForce RTX 5090",
+        "bf16_check": "PASS"
+      },
+      {
+        "index": 2,
+        "name": "NVIDIA GeForce RTX 5090",
+        "bf16_check": "PASS"
+      }
+    ],
+    "production_training_started": false
+  },
+  "status": "PASS",
+  "production_training_started": false
+}

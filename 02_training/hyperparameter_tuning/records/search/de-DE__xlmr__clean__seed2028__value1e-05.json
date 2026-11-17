@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "de-DE",
+    "xlmr",
+    "clean",
+    2028,
+    1e-05
+  ],
+  "summary": {
+    "accuracy": 0.8581418581418582,
+    "macro_f1": 0.8355119293073933,
+    "rows": 11097,
+    "actual_epochs": 30.0,
+    "best_epoch": 24.0,
+    "global_step": 10410,
+    "best_global_step": 8328,
+    "best_validation_macro_f1": 0.8355119293073933,
+    "patience_counter_at_stop": 6,
+    "stop_reason": "epoch_limit",
+    "weights_sha256": "4df27582968a68f95b219c75c239232a77d9e69beb0679b22feb24c562786c59",
+    "weights_file": "best.safetensors",
+    "parameter_name": "learning_rate",
+    "parameter_value": 1e-05,
+    "seed": 2028,
+    "optimizer_checkpoints_saved": false,
+    "resume_mode": "restart_interrupted_task"
+  },
+  "files": {
+    "search/de-DE__xlmr__clean__seed2028__value1e-05/validation_predictions.csv.gz": "3cded17866b17e2b9fbfca10f277ae02bdc782a800e5a051e397b5948329dfb2",
+    "search/de-DE__xlmr__clean__seed2028__value1e-05/validation_metrics.json": "f29d8734ad11ff26f81d181c2d4b6e939b0c80569e8b1dff58ae2f03d0433b79",
+    "search/de-DE__xlmr__clean__seed2028__value1e-05/training_history.json": "4fd61b3662cf5ea068268f99b4275e32a6b14d650d84569b64fceeacedc2303c",
+    "search/de-DE__xlmr__clean__seed2028__value1e-05/validation_history.json": "17304a4b01c7a8c6ed96abab53311943c4c56c3191043b221e7038684ce90fcb"
+  },
+  "finished": 1793764283.705654,
+  "provenance": "new_validation_only",
+  "started": 1793763245.4058607
+}

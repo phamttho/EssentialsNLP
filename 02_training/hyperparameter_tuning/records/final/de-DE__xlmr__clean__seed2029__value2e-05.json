@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "de-DE",
+    "xlmr",
+    "clean",
+    2029,
+    2e-05
+  ],
+  "summary": {
+    "accuracy": 0.8701298701298701,
+    "macro_f1": 0.8677125249502053
+  },
+  "files": {
+    "results/final/de-DE__xlmr__clean__seed2029__value2e-05/predictions.csv.gz": "fc6c79112bdac6f127fcc1c335332d3e2707e660d5648f1a11238211051f9376",
+    "results/final/de-DE__xlmr__clean__seed2029__value2e-05/metrics.json": "02ea0883c9b4e51633ef08e63042a38cedef1c0da7184e697fcd49310817fa76",
+    "results/final/de-DE__xlmr__clean__seed2029__value2e-05/verification.json": "adc4f57e808463e25325e52b23993c06a6cbfa6229ad54bd2a98e9c6f7fdf2cd",
+    "results/final/de-DE__xlmr__clean__seed2029__value2e-05/legacy_source.json": "c7e85c84652a9da4475062e0da52a6de5a12d007884c2b0e0b147d576c66dd94"
+  },
+  "finished": 1793776307.2410493,
+  "provenance": "original_run_reused",
+  "export": {
+    "language": "de-DE",
+    "model": "xlmr",
+    "training_condition": "clean",
+    "seed": 2029,
+    "parameter_name": "learning_rate",
+    "parameter_value": 2e-05,
+    "verified": true,
+    "prediction_rows": 38662,
+    "test_conditions": 13,
+    "predictions_sha256": "fc6c79112bdac6f127fcc1c335332d3e2707e660d5648f1a11238211051f9376",
+    "metrics_sha256": "02ea0883c9b4e51633ef08e63042a38cedef1c0da7184e697fcd49310817fa76"
+  },
+  "started": 1793776306.073272
+}

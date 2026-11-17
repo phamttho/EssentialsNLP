@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "fingerprint": "f3665e778273709c8b810b52dfb7b3fe0b5a2688adbe5541432dceb36281c6f9",
+  "job": [
+    "vi-VN",
+    "xlmr",
+    "clean",
+    2029,
+    2e-05
+  ],
+  "summary": {
+    "accuracy": 0.8561332660272589,
+    "macro_f1": 0.8134219620056963
+  },
+  "files": {
+    "results/final/vi-VN__xlmr__clean__seed2029__value2e-05/predictions.csv.gz": "ff0b31891cba0a7250439cb67ccd5b81cd78087520f5ea5f2e6c8128ca6821b7",
+    "results/final/vi-VN__xlmr__clean__seed2029__value2e-05/metrics.json": "136f928e1f84137631cfa3979115dbac759d93a0a0ce150bc30606c6ebd1a7f9",
+    "results/final/vi-VN__xlmr__clean__seed2029__value2e-05/verification.json": "b2c866141f72fc8dc53651d5e74f5021af5017ba7fcfe3ce3d9d2f983c13b62d",
+    "results/final/vi-VN__xlmr__clean__seed2029__value2e-05/legacy_source.json": "e90679ab91873c6a3b73613524462562a6d8a05ec97ed59fe1ea2e0bd60f6125"
+  },
+  "finished": 1793776021.2076695,
+  "provenance": "original_run_reused",
+  "export": {
+    "language": "vi-VN",
+    "model": "xlmr",
+    "training_condition": "clean",
+    "seed": 2029,
+    "parameter_name": "learning_rate",
+    "parameter_value": 2e-05,
+    "verified": true,
+    "prediction_rows": 38662,
+    "test_conditions": 13,
+    "predictions_sha256": "ff0b31891cba0a7250439cb67ccd5b81cd78087520f5ea5f2e6c8128ca6821b7",
+    "metrics_sha256": "136f928e1f84137631cfa3979115dbac759d93a0a0ce150bc30606c6ebd1a7f9"
+  },
+  "started": 1793776019.9212751
+}

@@ -1,0 +1,420 @@
+{
+  "languages": {
+    "en-US": {
+      "train": 11440,
+      "validation": 2028,
+      "test": 2974,
+      "mixed": 22880,
+      "conditions": [
+        {
+          "condition": "clean",
+          "rows": 2974,
+          "unchanged": 2974,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.05",
+          "rows": 2974,
+          "unchanged": 58,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.10",
+          "rows": 2974,
+          "unchanged": 8,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.20",
+          "rows": 2974,
+          "unchanged": 3,
+          "empty": 0
+        }
+      ]
+    },
+    "vi-VN": {
+      "train": 10846,
+      "validation": 1981,
+      "test": 2974,
+      "mixed": 21692,
+      "conditions": [
+        {
+          "condition": "clean",
+          "rows": 2974,
+          "unchanged": 2974,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 1
+        },
+        {
+          "condition": "deletion_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 1
+        },
+        {
+          "condition": "deletion_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 1
+        },
+        {
+          "condition": "substitution_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.05",
+          "rows": 2974,
+          "unchanged": 6,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.10",
+          "rows": 2974,
+          "unchanged": 5,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.20",
+          "rows": 2974,
+          "unchanged": 3,
+          "empty": 0
+        }
+      ]
+    },
+    "de-DE": {
+      "train": 11097,
+      "validation": 2002,
+      "test": 2974,
+      "mixed": 22194,
+      "conditions": [
+        {
+          "condition": "clean",
+          "rows": 2974,
+          "unchanged": 2974,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.05",
+          "rows": 2974,
+          "unchanged": 38,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.10",
+          "rows": 2974,
+          "unchanged": 4,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.20",
+          "rows": 2974,
+          "unchanged": 3,
+          "empty": 0
+        }
+      ]
+    },
+    "zh-CN": {
+      "train": 10747,
+      "validation": 1982,
+      "test": 2974,
+      "mixed": 21494,
+      "conditions": [
+        {
+          "condition": "clean",
+          "rows": 2974,
+          "unchanged": 2974,
+          "empty": 0
+        },
+        {
+          "condition": "deletion_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 1
+        },
+        {
+          "condition": "deletion_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 1
+        },
+        {
+          "condition": "deletion_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 1
+        },
+        {
+          "condition": "substitution_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "substitution_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.05",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.10",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "duplication_0.20",
+          "rows": 2974,
+          "unchanged": 0,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.05",
+          "rows": 2974,
+          "unchanged": 23,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.10",
+          "rows": 2974,
+          "unchanged": 16,
+          "empty": 0
+        },
+        {
+          "condition": "swap_0.20",
+          "rows": 2974,
+          "unchanged": 8,
+          "empty": 0
+        }
+      ]
+    }
+  },
+  "data_sha256": {
+    "augmented/de-DE_train_augmented.csv": "a93deb0d34cd205682df550d88c887dd027c497dfdb8e76bba070ac45a01d2ac",
+    "augmented/en-US_train_augmented.csv": "89479fd9b8fedded190ea15e84257d1620f4c002772f3e40721644ea112ff614",
+    "augmented/vi-VN_train_augmented.csv": "10d0651834409f5076f655352d650dbce47ae83f5df2bfb9cbffc848af5c2b36",
+    "augmented/zh-CN_train_augmented.csv": "aec338b574159e8d57616073e86fce2761b0bbdc7ff9a0cd11e1fe2697423ad1",
+    "clean/de-DE/test.csv": "c9d40f5a568378cfe9222c48d4b2fa3c2d32012b8ed8fb37da8fb92b946b2174",
+    "clean/de-DE/train.csv": "e6cc41137c00b4b34944ff591ffde1696a78cfa1519b9f04e07c2b523cff5d98",
+    "clean/de-DE/validation.csv": "4258571f169a9a0118e3dffbdda2928214e5552b87f26550f2b8dc708fc18b53",
+    "clean/en-US/test.csv": "344a780617c04a1af541f7aedb89a7cd591a4491a20d218c9be7cffbf3304b4f",
+    "clean/en-US/train.csv": "d5c30a02cebb70f0e40b2daf100e9a4c9f50dd3ecd32410c953c8a43482af877",
+    "clean/en-US/validation.csv": "db28ee6a0e585ce08f9d6ae41fac05a47f27027d06107e938e578ac88573af8b",
+    "clean/vi-VN/test.csv": "d2b3693e3962e0ffd7aeb4fb4e79cb05405b5ab9768eef3572341c5a98d96bb1",
+    "clean/vi-VN/train.csv": "7913c02779d06c1e04cdc93a32e78e7eed941dd2c5efd26da82326fd811765fc",
+    "clean/vi-VN/validation.csv": "aa7f557f5bd1b747a65b2a478a78aeb179d7de45ce606566ed0024a7a373cc36",
+    "clean/zh-CN/test.csv": "48bb00c6434135f38170e09b5ddb6b942d8bcbee92b006f374804ab6b9e87d78",
+    "clean/zh-CN/train.csv": "d56b7023c0912d8b7fb9a0ee42b6d16d93930da64d9b04364c1e8ad6190b38b6",
+    "clean/zh-CN/validation.csv": "7ee4591db5a0a5f5fb44f1229e0e5e2f62ea9a0af6e4d7ca92283b07a16aa2d0",
+    "corrupted_test/de-DE/deletion_0.05.csv": "4bd46e8f1022940b4bdf7ee47fef6937316e4d0ca2be475e467220eed21e9d09",
+    "corrupted_test/de-DE/deletion_0.10.csv": "44ae0d4db83206e04420fe8bb01c8421699398eb5246c93671c19649f5e319a7",
+    "corrupted_test/de-DE/deletion_0.20.csv": "16b3392601e77033499780c9d8e941e9feabcd89fc18248653088ea7708f91e4",
+    "corrupted_test/de-DE/duplication_0.05.csv": "eac0a70a4aa1920da50951715e06d97060cad9c13b568fe3d4f7f231a5da8b8a",
+    "corrupted_test/de-DE/duplication_0.10.csv": "44bd4aff594c8ba1397562af6bb3d376de678cffca0cd7f1f09a826fe5bd3eee",
+    "corrupted_test/de-DE/duplication_0.20.csv": "5edb45082edaf5749c37b83b80c9e0c6c3a557427321df5a84f2adebdc1fcbf6",
+    "corrupted_test/de-DE/substitution_0.05.csv": "7532c6802a0d12615725d66e05f1b55fa3203f91cd84d69b65bc45a5d5ae3a60",
+    "corrupted_test/de-DE/substitution_0.10.csv": "2a520863b41cd9d13a3e597f075a302256874759bb9658b652f4707358018323",
+    "corrupted_test/de-DE/substitution_0.20.csv": "267a7f588b202ee21e52cec4c0bd0a1a3510c7d7a2801f33d6da33b948073e15",
+    "corrupted_test/de-DE/swap_0.05.csv": "56c05123293487ede7713b03447debbd5a26e28af2f8b4ed08d24d1f384120fa",
+    "corrupted_test/de-DE/swap_0.10.csv": "0ede854f2f71ebb1e8f67453e79bfe7c836455d352876380d809803eece7428f",
+    "corrupted_test/de-DE/swap_0.20.csv": "6e29c37ce3a0415cd14e2388e94468c6708effae57a79298507380dae75a80a2",
+    "corrupted_test/en-US/deletion_0.05.csv": "d2b7465867df23b7be30af043eb5aaa226602644edb572f0a5ce1373704524e7",
+    "corrupted_test/en-US/deletion_0.10.csv": "5fe6575e32310e16aa2a17b011fd6cc7fce596b4cf08fa9f71472e4d25d4f43f",
+    "corrupted_test/en-US/deletion_0.20.csv": "4317ec2a04eea56d952c27509518b61e589d47796a8d700960d613e8dd065d67",
+    "corrupted_test/en-US/duplication_0.05.csv": "5e35d776aabc0acef6613fcffbaff939f373a0fcdcc5d79cda99829f6bcf2030",
+    "corrupted_test/en-US/duplication_0.10.csv": "d96170945e53eb668dd0b183336ab721e1c8962762bca6a46cc643cb3e59bace",
+    "corrupted_test/en-US/duplication_0.20.csv": "c509dedafb75dd5b3e2769de39840957f11eec3276750c055c240340080da40c",
+    "corrupted_test/en-US/substitution_0.05.csv": "4cf7a30ca270b3b21b8d564747b7502f377fa733c2b74f16ba3dabf7a50b64b7",
+    "corrupted_test/en-US/substitution_0.10.csv": "c40e3bb15db3116205ab8641673e6dfc9a97286ea97f1020095f9278705db3cc",
+    "corrupted_test/en-US/substitution_0.20.csv": "487fb6d3986bf6bc4bffccaeacbdb84e621487aeab18d486dc085cf3d0d216b7",
+    "corrupted_test/en-US/swap_0.05.csv": "a2bd015ff8a89183a0975242fd731eaffd5ee6497b9d4bb1e5d0b72212e1ef10",
+    "corrupted_test/en-US/swap_0.10.csv": "fed44d4fdf493e1d0ab34ace7bb5c27f5fea466c3e4debac57070a07e1441dca",
+    "corrupted_test/en-US/swap_0.20.csv": "0b285d07e01a8d52713b6865f2bb28ade18292b3b2289bf41441f0c009a6b148",
+    "corrupted_test/vi-VN/deletion_0.05.csv": "b6d41ba63f79b10cf7daacb7ac7a2283bde419174b66f7b6752279c46db5d7cf",
+    "corrupted_test/vi-VN/deletion_0.10.csv": "74a58f2216c255268f3ba551532f34daf8507daba9db00832c94128117dc511d",
+    "corrupted_test/vi-VN/deletion_0.20.csv": "373e523dd9a5e79b82a1e97c1207bf7febe88fcc9197dbe1b85d2b1827ba70c1",
+    "corrupted_test/vi-VN/duplication_0.05.csv": "85a563ebe47e9b943c37f88638d1b75905ccc7cac9715b435c4215b6698956e5",
+    "corrupted_test/vi-VN/duplication_0.10.csv": "701ab48082c2484613e6c00fc0d0353c9143b5c7cc95d588ac4614e6969cf66b",
+    "corrupted_test/vi-VN/duplication_0.20.csv": "3a2c66f955d3c4fb460c4f2d0daedf664a669e0fc2b0ac23d1271e93254f586d",
+    "corrupted_test/vi-VN/substitution_0.05.csv": "db0a69bad7956bb45050f72bdcbe4cc2b8e39954f2edaf02375c830f0c6c2641",
+    "corrupted_test/vi-VN/substitution_0.10.csv": "f248842f1a7f2da52a8798b1a6ab393e38a365702705665c7f2704a64075134a",
+    "corrupted_test/vi-VN/substitution_0.20.csv": "14d33bdff100a502d44abb001e3e8b1362aa7c21b312a8b4741cd18316a64d1d",
+    "corrupted_test/vi-VN/swap_0.05.csv": "44ea3ed22c688e11b320a312a047b2d7cbc2289318cec35d21e6c69b7426f16d",
+    "corrupted_test/vi-VN/swap_0.10.csv": "6e7664e18512271f1a5621df13e2a16b48d3098c1f39424d9e08a2c65d341ce4",
+    "corrupted_test/vi-VN/swap_0.20.csv": "12922c5e3f0874fb85b68024fe877c59672a53feb691e83d630f6d84e3d47258",
+    "corrupted_test/zh-CN/deletion_0.05.csv": "cb4b741550b2f8992fb90d31746a0a982a54186b05ef19ba9ecef70419c883a7",
+    "corrupted_test/zh-CN/deletion_0.10.csv": "60cd0bcad6a2fbc3cbd818329f6abd3aeb9cf6af1cecf8c27b122c6956dccd84",
+    "corrupted_test/zh-CN/deletion_0.20.csv": "fd4c5e179e37864dc1cfc433f42110d799de2243089ca9aea1a16eafe9b2ab49",
+    "corrupted_test/zh-CN/duplication_0.05.csv": "ab2bf88c8a39722d402694e54fd5149a0508dcc20eed6b0c1d7f482b53d0b13c",
+    "corrupted_test/zh-CN/duplication_0.10.csv": "9ea8a2fa23e2056eab029c36105eb2978b9b06f58070986e055f42b17dd8b872",
+    "corrupted_test/zh-CN/duplication_0.20.csv": "b546d54e574f92b72b69b37237fba27fce35fa248d9ba7e559e75d37bf5dc9f0",
+    "corrupted_test/zh-CN/substitution_0.05.csv": "9c360bae11104d6b099014e8912d45eff347b5c3bcdf1df66c6b9cad8291f2c5",
+    "corrupted_test/zh-CN/substitution_0.10.csv": "720d7e42cdd2f2996abdedbf958af70914089c7125ab4f968dca79786382f639",
+    "corrupted_test/zh-CN/substitution_0.20.csv": "2dbe221bdc108c4ee36a3fe66f2aa9d020c0016c314eef0318cf952b01d8f4ad",
+    "corrupted_test/zh-CN/swap_0.05.csv": "42143ac4f6fa71a1a1e4b7d9fdff6771e03127d781e7363382bdabb3568eb754",
+    "corrupted_test/zh-CN/swap_0.10.csv": "03c0ad61ea11a5fa7484053b340e3224e12c89fff97306a53d870550149ecd71",
+    "corrupted_test/zh-CN/swap_0.20.csv": "36ef4f74983f87757f9508dafc7ce0f3b5365affeafd56e3cd70f24dec7b0808",
+    "metadata/data_manifest.json": "507e37f4887a15f6967ae6338061c45fca7544b93a1cfcb8151cc4024e6954f0",
+    "metadata/intent_mapping.json": "1330ab1cc7df78c7389c465562385104b997483ead35d4323e792afa1405a6ad"
+  },
+  "warnings": [],
+  "source_row_definition": "Zero-based row in the frozen exported clean split, not original MASSIVE ID",
+  "repository_commit": "6f6bd31ad98edc64bee375a203f516cb70efbcda",
+  "split_note": "Uses teammate exports as provided; no split modification. Export notebook may apply cleaned_data."
+}

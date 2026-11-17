@@ -1,0 +1,32 @@
+FIGURE PROVENANCE
+=================
+
+Both report figures are derived directly from Sun's finalized supplementary HPO output in the uploaded training branch.
+
+Original source inside EssentialsNLP-02_training(1).zip:
+  EssentialsNLP-02_training/hyperparameter_tuning/results/summaries/three_seed_summary.csv
+
+A byte-for-byte copy of that CSV is included here as:
+  figure_source_three_seed_summary.csv
+
+Source SHA-256:
+  3f8831e61ee234317d53f57fedc7491f3a2c2692b500f5daba85c45022515e75
+
+Figure 1 aggregation:
+  - final selected-parameter three-seed summary
+  - clean score: mean clean macro_f1_mean across the four languages
+  - noisy score: mean of the 12 corrupted conditions within each language, then equal-weight mean across languages
+
+Figure 2 aggregation:
+  - final selected mixed-trained XLM-R only
+  - for each language and nominal noise level (0.05, 0.10, 0.20), mean macro_f1_mean across the four corruption types
+
+The included make_figures.py regenerates both PNG files from the included CSV. No training or inference is rerun.
+
+Included figure SHA-256 hashes:
+  01_selected_clean_vs_noisy_macro_f1.png  17cb40e5c0d7a62088556fdf49cfef4e06c8c68de2cbe5a3c1225fee9ddf5521
+  02_selected_xlmr_noise_curve.png          f8b55835581eebb0cece424b311f7f6e29cdda7711665e50d7d3c733418c1965
+
+Compilation verification:
+  main.tex + references.bib + both figures were compiled locally using pdflatex/BibTeX/pdflatex/pdflatex.
+  Result: successful compilation, 5 pages, no unresolved-reference warnings on the final pass.

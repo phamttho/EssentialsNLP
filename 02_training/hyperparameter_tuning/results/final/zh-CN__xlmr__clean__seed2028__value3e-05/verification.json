@@ -1,0 +1,15 @@
+{
+  "language": "zh-CN",
+  "model": "xlmr",
+  "training_condition": "clean",
+  "seed": 2028,
+  "parameter_name": "learning_rate",
+  "parameter_value": 3e-05,
+  "verified": true,
+  "prediction_rows": 38662,
+  "test_conditions": 13,
+  "predictions_sha256": "53d9cecaf0cf3884cb8ee1ead02ff48a271102753c65cdbe845d2d1955b59075",
+  "metrics_sha256": "70b5f2e08027ea70a2accf9e8dcf8090711c6ffed8053c20b436a2e2cbff9754",
+  "origin": "new_selected_model",
+  "verified_at": 1793779093.8382428
+}
