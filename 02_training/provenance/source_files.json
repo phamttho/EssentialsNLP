@@ -200,7 +200,7 @@
       "sha256": "b344f80e50e0422b22e71dfc21f09e3caf06b6d901584bbc08842c37bf77b391"
     },
     {
-      "path": "hyperparameter_tuning/README.md",
+      "path": "docs/original_hpo_README.md",
       "source": "/root/autodl-tmp/essentials_in_text_and_speech/02_training/hyperparameter_tuning/README.md",
       "bytes": 5963,
       "sha256": "5fc654ccc702d75f89b12db25e2017d1cc09b836f09f8ab202811da848189fe4"

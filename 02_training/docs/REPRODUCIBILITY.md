@@ -52,7 +52,39 @@ Use the **frozen exported files**, not newly generated random corruptions. Verif
 
 The recorded environment used Python 3.12, PyTorch 2.8.0 with CUDA 12.8 support, Transformers 4.57.1, Accelerate 1.10.1, scikit-learn 1.7.2, pandas 2.3.3 and jieba 0.42.1. Consult `requirements.txt`, `requirements.lock.txt` and retained environment evidence for the complete recorded versions.
 
-Create an isolated environment at `02_training/environment`; do not modify a shared system environment. The original check requires a PyTorch build containing `sm_120` support for RTX 5090. Installing a package with the right version number alone does not establish that the GPU build is compatible.
+### Install and verify the locked environment
+
+On Linux x86-64, use CPython 3.12 in a clean restoration checkout. The lock file pins the exact CUDA 12.8 PyTorch wheel and its SHA-256 checksum. Install from `requirements.lock.txt` to reproduce the recorded environment. `requirements.txt` is a shorter list of the main packages.
+
+```bash
+cd /root/autodl-tmp/essentials_in_text_and_speech/02_training
+python3.12 -m venv environment
+mkdir -p cache/pip tmp
+PIP_CACHE_DIR="$PWD/cache/pip" TMPDIR="$PWD/tmp" \
+  environment/bin/python -m pip install -r requirements.lock.txt
+environment/bin/python -m pip check
+environment/bin/python -B tools/verify_archive.py
+```
+
+Before running XLM-R on an RTX 5090, check that the restored environment can see the GPU and that PyTorch supports its CUDA architecture.
+
+```bash
+nvidia-smi
+environment/bin/python -B - <<'PYTHON'
+import torch
+
+print(f"PyTorch {torch.__version__} with CUDA {torch.version.cuda}")
+assert torch.__version__ == "2.8.0+cu128", "Expected the PyTorch wheel from the lock file."
+assert torch.cuda.is_available(), "A compatible NVIDIA GPU must be visible."
+architectures = torch.cuda.get_arch_list()
+print(f"Supported architectures: {', '.join(architectures)}")
+assert "sm_120" in architectures, "The PyTorch build must support the RTX 5090."
+PYTHON
+```
+
+These checks cover dependency consistency, the published archive and GPU support. Restore the frozen data and the pretrained files before launching the training scripts.
+
+### Restore the pretrained snapshot
 
 Restore `provenance/pretrained_metadata.json` **without editing its contents** to `02_training/cache/pretrained/metadata.json`. Obtain the recorded `FacebookAI/xlm-roberta-base` revision `e73636d4f797dec63c3081bb6ed5c7b0bb3f2089`, then place these files in the snapshot directory shown above:
 

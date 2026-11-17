@@ -27,11 +27,15 @@ environment, input datasets and pretrained snapshot are used read-only.
    run fingerprint and completed validation records.
 2. Reuse 72 original validation records; fit 144 new candidates (96 LR + 48 XLM-R).
 3. After all 216 scores are complete, lock 12 language/model parameter choices.
-4. For choices equal to original parameters, reuse and verify original test
-   predictions. For changed choices, refit with each original seed and export
-   clean + 12 corrupted test sets. At most 72 refits (48 LR + 24 XLM-R).
-5. Verify all 72 final evaluations and aggregate 936 metric rows into 312
-   three-seed groups. Final predictions are compressed CSV files.
+4. The final stage completed **60 new training runs and 12 reuses of original
+   runs**, for **72 final evaluations**. The 60 new runs comprised 48 runs
+   with TF-IDF and Logistic Regression at `C=10` and 12 XLM-R runs in
+   English and Simplified Chinese at `3e-5`. German and Vietnamese XLM-R
+   retained `2e-5`, so their 12 original runs supplied the verified test
+   predictions.
+5. All 72 final evaluations were verified on the clean test set and 12
+   corruption conditions. The final tables contain 936 metric rows and 312
+   three-seed groups. Final predictions were exported as compressed CSV files.
 A refit can differ numerically from the search run. Its actual validation score,
 best epoch and difference from the search score are recorded; there is no
 test-based reselection or claim of bit-identical reproduction.
@@ -45,8 +49,12 @@ hold both old and new files. Optimizer/scheduler/RNG recovery checkpoints are
 disabled. The caller verifies reloaded validation predictions before deleting
 search weights. For selected refits, it verifies all test predictions first.
 Permanent: settings, source, logs, histories, validation predictions, selected
-parameters, metrics, final predictions and checksums. No new model weights at
-completion. Original model weights are never deleted.
+parameters, metrics, final predictions and checksums. The completed tuning
+experiment retained these artifacts after removing its new weights. The tuning
+runner preserved the original models during the experiment. A separate storage
+cleanup later removed the 24 original XLM-R weight files after the prediction
+backup passed verification. The saved predictions and training records remain
+available for analysis.
 An interrupted fit restarts from scratch, but completed candidate/final records
 are verified and skipped. Failed task work is retained until explicit restart.
 Only work/<specific_job>/ within this new directory can be cleaned by the runner.
@@ -55,6 +63,13 @@ Disk floor25GiB plus conservative outstanding reservations (3.5GiB per GPU job,
 0.5GiB per CPU job). Full-concurrency startup threshold36.5GiB. Insufficient
 space produces a safety stop; it never cleans other projects. This guard is
 conservative and cannot reserve disk against unrelated external processes.
+
+## Install and verify the environment
+
+Follow the [reproduction guide](../docs/REPRODUCIBILITY.md#install-and-verify-the-locked-environment)
+to install the shared training environment from `../requirements.lock.txt` and
+verify the archived results. The [original tuning README](../docs/original_hpo_README.md)
+preserves the instructions recorded during the experiment.
 
 ## Start in background
     cd /root/autodl-tmp/essentials_in_text_and_speech/02_training/hyperparameter_tuning
