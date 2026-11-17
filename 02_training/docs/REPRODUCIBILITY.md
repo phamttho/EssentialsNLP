@@ -2,11 +2,11 @@
 
 ## Scope of this publication
 
-This branch preserves the original experiment source and configuration bytes, plus retained metrics and evidence. The original 72-run study and the supplementary search are distinct experiments. Publication documentation is additional explanation; it is not a record of new training.
+This directory preserves the original experiment source and configuration bytes, plus retained metrics and evidence. The original 72-run study and the supplementary search are distinct experiments. Publication documentation is additional explanation; it is not a record of new training.
 
 The code is **not a portable quick-start package**. It retains Linux-specific process handling, fixed deployment paths, offline model loading and checks that bind completed records to their original inputs. Reading the included JSON/CSV summaries needs no GPU. Full prediction verification or retraining requires the missing artifacts described below.
 
-From the repository root, `python -B tools/verify_archive.py` checks the included archive against its source-file inventory and checks the recorded experiment/table counts. It uses only the Python standard library, without a GPU. This publication check does not retrain models or replace full verification of prediction files omitted from Git.
+From `02_training/`, `python -B tools/verify_archive.py` checks the included archive against its source-file inventory and checks the recorded experiment/table counts. It uses only the Python standard library, without a GPU. This publication check does not retrain models or replace full verification of prediction files omitted from Git.
 
 ## Recorded execution layout
 
@@ -18,7 +18,7 @@ From the repository root, `python -B tools/verify_archive.py` checks the include
 │       ├── augmented/
 │       ├── corrupted_test/
 │       └── metadata/
-└── 02_training/                              This branch, checked out here
+└── 02_training/                              Training directory within the checkout
     ├── environment/bin/python                Isolated Python environment
     ├── cache/pretrained/
     │   ├── metadata.json
@@ -33,12 +33,11 @@ Use a separate restoration machine or clean restoration directory. Do not replac
 
 ## Restore the data source
 
-The source repository is private. Authenticate with your own authorized GitHub account; do not put credentials into scripts or configuration files. On a new restoration machine, with the destination directories absent:
+On a clean restoration machine, clone the repository into the project root. The checkout already contains `02_training/`. Clone the frozen data source separately into the sibling `01_data/` directory.
 
 ```bash
-mkdir -p /root/autodl-tmp/essentials_in_text_and_speech
 git clone --branch 02_training https://github.com/phamttho/EssentialsNLP.git \
-  /root/autodl-tmp/essentials_in_text_and_speech/02_training
+  /root/autodl-tmp/essentials_in_text_and_speech
 git clone --no-checkout https://github.com/phamttho/EssentialsNLP.git \
   /root/autodl-tmp/essentials_in_text_and_speech/01_data
 git -C /root/autodl-tmp/essentials_in_text_and_speech/01_data \
@@ -92,7 +91,7 @@ The original fingerprint includes source, configuration, input hashes, dependenc
 
 Do not edit code/configuration and then reuse old completion records as though they belonged to the modified experiment. A portable implementation, different GPU schedule or changed training setting is a new version and must have separate fresh outputs and fingerprints.
 
-For a fresh rerun, separate the bundled evidence from active outputs before starting, and prepare the required original-stage evidence before HPO. For an exact archive restoration, restore every referenced artifact before attempting resume or verification. These are different workflows; simply cloning this branch does not complete either one.
+For a fresh rerun, separate the bundled evidence from active outputs before starting, and prepare the required original-stage evidence before HPO. For an exact archive restoration, restore every referenced artifact before attempting resume or verification. These are different workflows; both require restoring the runtime assets.
 
 Only after restoring and checking all prerequisites should the recorded launch scripts be used. The original `scripts/start.sh` schedules four GPUs (0–3); `hyperparameter_tuning/scripts/start.sh` schedules three GPUs (0–2). Check `nvidia-smi` and existing processes before either launch. The archived original configuration is not suitable for a three-GPU machine without a separately versioned scheduler change.
 
@@ -104,4 +103,4 @@ Selection uses the mean clean-validation macro-F1 over two training conditions a
 
 The frozen data cleaning, held-out character-pool use and synthetic-typo limitations remain unchanged by HPO. Original test results had already been viewed, so describe the tuning as supplementary. Full prediction checks establish consistency with saved predictions and labels; they do not establish realistic typo coverage or guarantee improvements.
 
-Training histories retain XLM-R training loss at logging steps and validation loss, accuracy and macro-F1 at epoch evaluations. They do not include per-epoch training accuracy. W&B or another plotting tool can visualize retained values later, but cannot recover metrics that were never measured. Deleted tuned weights must be retrained for predictions on new inputs.
+Training histories retain XLM-R training loss at logging steps and validation loss, accuracy and macro-F1 at epoch evaluations. They do not include per-epoch training accuracy. W&B or another plotting tool can visualize retained values later, but cannot recover metrics that were never measured. Making predictions on new inputs with a refitted tuned model requires retraining. The 24 original XLM-R weights were retired after the prediction backup was verified. Original checks that require those weights need a separate weight copy or a fresh fit, while analysis from saved predictions can proceed.

@@ -1,6 +1,6 @@
 # Multilingual intent classification under synthetic typos
 
-This branch contains Ke Sun's **model-training work (Part 02)** for the Essentials in Text and Speech Processing project. It includes the original experiment and the supplementary hyperparameter search, together with their configurations, training histories and result summaries.
+This directory contains Ke Sun's **model-training work (Part 02)** for the Essentials in Text and Speech Processing project. It includes the original experiment and the supplementary hyperparameter search, together with their configurations, training histories and result summaries.
 
 The project asks how character-level spelling noise affects intent classification across languages, and whether training with corrupted examples improves robustness. The included results are completed experiments; this publication does not claim that tuning improved every model or condition.
 
@@ -11,8 +11,14 @@ The project asks how character-level spelling noise affects intent classificatio
 - **Inspect tuning decisions:** see `hyperparameter_tuning/results/search_validation_scores.csv` and `hyperparameter_tuning/results/selection.json`.
 - **Compare original and tuned results:** see `hyperparameter_tuning/results/summaries/baseline_vs_tuned.csv`.
 - **Plot training curves:** use the retained training-history JSON files described below.
-- **Check this publication:** run `python -B tools/verify_archive.py` from the repository root. This uses the Python standard library and needs no GPU.
-- **Run or verify the archived code:** first read [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md). This is an execution archive, not a portable one-command training package.
+- **Check the archive:** run the commands below from the repository root. The verifier uses the Python standard library and needs no GPU.
+- **Prepare a Linux/AutoDL reproduction:** follow the [reproduction guide](docs/REPRODUCIBILITY.md) to restore the frozen `01_data/exported_data` inputs, the pretrained snapshot, and the Python 3.12 environment. `requirements.txt` lists the direct dependencies, and `requirements.lock.txt` records the versions from the original environment.
+- **Run a restored experiment:** from the restored `02_training/` directory, use `bash scripts/start.sh` for the original experiment. From `02_training/hyperparameter_tuning/`, use `bash scripts/start.sh` for the supplementary search. Read the guide before launching either stage. The tables already in Git can be used for analysis.
+
+```bash
+cd 02_training
+python -B tools/verify_archive.py
+```
 
 ## Experimental design
 
@@ -42,7 +48,7 @@ XLM-R was allowed up to 30 epochs, with early stopping after 10 validation evalu
 
 The search contains **216 candidate records**: 72 reused original validation results and 144 newly trained candidates. After selection, there are **72 final evaluations**: 60 newly trained runs and 12 reused original runs. Each final run has 13 test conditions, producing **936 metric rows** and **312 groups summarized across three seeds**.
 
-## What is in this branch?
+## What is in this directory?
 
 ```text
 configs/                         Original experiment settings
@@ -55,7 +61,7 @@ hyperparameter_tuning/          Supplementary code, settings and retained result
 docs/                           Original guide and reproduction requirements
 ```
 
-The data-processing notebook and exported datasets are not duplicated at this branch's root. The frozen data source is repository commit `6f6bd31ad98edc64bee375a203f516cb70efbcda`; see the reproduction guide for restoring it as a separate `01_data` checkout.
+Training reads the frozen exports from the sibling `01_data/exported_data/` directory. The frozen data source is repository commit `6f6bd31ad98edc64bee375a203f516cb70efbcda`; see the reproduction guide for restoring it as a separate `01_data` checkout.
 
 Large data files, installed environments, caches, trained weights and full prediction files are excluded from Git. The complete predictions remain in the private project storage. Contact **Ke Sun** for the corresponding result files or private handoff package; this repository does not provide a public download link.
 
@@ -79,6 +85,6 @@ The same frozen augmented data and test corruptions are used across model seeds.
 
 ## Weights and reproducibility
 
-New tuning weights were deleted only after the required predictions had been exported and verified. Training histories, metrics and provenance were retained. New predictions for previously unseen input would require retraining a selected tuned model.
+New tuning weights were deleted only after the required predictions had been exported and verified. Training histories, metrics and provenance were retained. The 24 original XLM-R weight files were retired separately after the prediction backup was verified. To make new predictions with those models, restore a separate copy of the weights or retrain. Newly refitted tuned models require retraining for new inference. The saved predictions still support analysis of the existing experiments.
 
 The scripts preserve their original Linux/AutoDL paths and fingerprint checks. Restoring datasets, pretrained files, dependencies and any omitted prediction artifacts is necessary before executing them. See [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) for the exact requirements.
